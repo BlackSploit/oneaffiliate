@@ -2812,6 +2812,11 @@
                           ><span class="menu-title-text">Blog</span></a
                         >
                       </li>
+                      <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9488"
+                    >
+                      <a href="./index.html#faqqq">FAQ</a>
+                    </li>
 
                       <li
                         id="menu-item-9488"
@@ -3279,54 +3284,39 @@
 
 
 
-
-                                       
-<div style="max-width: 1280px; position: relative; margin: auto; overflow: hidden;">
-
-  <!-- Slide 1 -->
-  <div class="mySlides" style="display: none;">
-      <img src="./image/Screenshot 2024-06-22 205128.png" alt="Slide 1" style="width: 100%;">
-  </div>
-
-  <!-- Slide 2 -->
-  <div class="mySlides" style="display: none;">
-      <img src="./image/Gemini_Generated_Image_16ipif16ipif16ip.jfif" alt="Slide 2" style="width: 100%;">
-  </div>
-
-  <!-- Slide 3 -->
-  <div class="mySlides" style="display: none;">
-      <img src="./image/dark-blue-world-map-showing-communication-networks_3442-948.avif" alt="Slide 3" style="width: 100%;">
-  </div>
-
-  <!-- Navigation buttons -->
-  <a class="prev" style="cursor: pointer; position: absolute; top: 50%; left: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.3); color: white; padding: 16px 24px; border-radius: 0 3px 3px 0; font-size: 18px;" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" style="cursor: pointer; position: absolute; top: 50%; right: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.3); color: white; padding: 16px 24px; border-radius: 3px 0 0 3px; font-size: 18px;" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-
-<script>
-  let slideIndex = 0;
-  showSlides();
-
-  function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1 }
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 3500); // Change image every 3 seconds (3000 milliseconds)
-  }
-
-  function plusSlides(n) {
-      showSlides(slideIndex += n);
-  }
-</script>
-                                        
-
-
+                                          <div style="max-width: 1280px; position: relative; margin: auto; overflow: hidden;">
+                                            <div class="slide-container" style="display: flex; transition: transform 0.5s ease-in-out; gap: 2%;">
+                                              <!-- Slide 1 (group of 2 images) -->
+                                              <div class="mySlide" style="min-width: 100%; display: flex; justify-content: space-between;">
+                                                <img src="./image/swiggy.jpg" alt="Slide 1" style="width: 48%;">
+                                                <img src="./image/swiggy.jpg" alt="Slide 2" style="width: 48%;">
+                                              </div>
+                                          
+                                              <!-- Slide 2 (group of 2 images) -->
+                                              <div class="mySlide" style="min-width: 100%; display: flex; justify-content: space-between;">
+                                                <img src="./image/swiggy.jpg" alt="Slide 3" style="width: 48%;">
+                                                <img src="./image/swiggy.jpg" alt="Slide 4" style="width: 48%;">
+                                              </div>
+                                              
+                                              <!-- Add more slide groups as needed -->
+                                            </div>
+                                          </div>
+                                          
+                                          <script>
+                                            let slideIndex = 0;
+                                            const slides = document.querySelectorAll('.mySlide');
+                                            const totalSlides = slides.length;
+                                          
+                                            function showSlides() {
+                                                slideIndex++;
+                                                if (slideIndex >= totalSlides) { slideIndex = 0; }
+                                                document.querySelector('.slide-container').style.transform = `translateX(-${slideIndex * 100}%)`;
+                                                setTimeout(showSlides, 4000); // Change slide every 3 seconds
+                                            }
+                                          
+                                            showSlides();
+                                          </script>
+                                          
 
 
 
@@ -5751,7 +5741,7 @@
                             <h2>Frequent Asked Questions</h2>
                           </div>
                           <div
-                            class="toggles"
+                            class="toggles" id="faqqq"
                             data-br=""
                             data-starting="default"
                             data-style="minimal"
@@ -7285,7 +7275,12 @@
                         >Home</a
                       >
                     </li>
-                    <li
+
+
+
+
+
+                    <!-- <li
                       class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-330"
                     >
                       <a href="#">Website List</a>
@@ -7343,7 +7338,7 @@
                           >
                         </li>
                       </ul>
-                    </li>
+                    </li> -->
                     <!-- <li
                       class="menu-item menu-item-type-post_type menu-item-object-page menu-item-578"
                     >
@@ -7364,9 +7359,13 @@
                     <li
                       class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9488"
                     >
-                      <a href="./blog.html">Blog</a>
+                      <a href="./blog.html">Events</a>
                     </li>
-
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9488"
+                    >
+                      <a href="./index.html#faqqq">FAQ</a>
+                    </li>
                     <li
                       class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9488"
                     >
