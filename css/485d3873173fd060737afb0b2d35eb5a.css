@@ -2288,7 +2288,7 @@ body
   }
   body #header-outer {
     margin-bottom: 0;
-    padding: 12px 0;
+    padding: 0px 0;
   }
   body.page-template-template-no-header-footer.nectar_using_pfsr #header-outer,
   body.page-template-template-no-header.nectar_using_pfsr #header-outer {
