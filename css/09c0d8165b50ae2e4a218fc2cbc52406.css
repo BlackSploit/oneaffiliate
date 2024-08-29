@@ -10837,7 +10837,7 @@ body h5,
 body h6,
 body:not(.original) .comment-list .comment-author,
 body:not(.original) .comment-list .pingback .comment-body > a {
-  color: #13182b;
+  color: #fafafa;
 }
 .comment-list .comment-meta a:not(:hover),
 .material .comment-list .reply a:not(:hover) {
@@ -13246,7 +13246,7 @@ body.ascend[data-header-color="custom"]
   .cart-menu
   .cart-icon-wrap
   i {
-  color: #353535 !important;
+  color: #b7b7b7 !important;
 }
 #header-outer.transparent.dark-slide
   > #top
@@ -13447,7 +13447,7 @@ body.ascend[data-header-color="custom"]
   .cart-menu
   .cart-icon-wrap
   i {
-  color: #353535 !important;
+  color: #e1e1e1 !important;
 }
 #header-outer.dark-slide
   .nectar-mobile-only.mobile-header

@@ -13135,7 +13135,7 @@ body.material
   opacity: 1;
 }
 :root {
-  --nectar-starting-dark-header-color: #353535;
+  --nectar-starting-dark-header-color: #c8c8c8;
 }
 #header-outer.transparent[data-permanent-transparent="false"].dark-slide
   #top
@@ -13245,7 +13245,7 @@ body.ascend[data-header-color="custom"]
   .cart-menu
   .cart-icon-wrap
   i {
-  color: #353535 !important;
+  color: #c7c7c7 !important;
 }
 #header-outer.transparent.dark-slide
   > #top

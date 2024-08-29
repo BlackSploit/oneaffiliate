@@ -107,7 +107,7 @@ line-height:1.9rem;
 p,li {
 font-size: 1rem;
 line-height: 1.3rem;
-color: #555;
+color: rgb(255, 255, 255);
 letter-spacing:-0.5;
 }
 
@@ -674,7 +674,7 @@ body #header-outer[data-full-width=true] header>.container, body #header-seconda
 }
 
 .home_prediction .has-animated-gradient .row-bg-overlay,.home_hero .has-animated-gradient .row-bg-overlay {
-    background: linear-gradient(180deg, rgba(0, 59, 206, 0.1) 0%, rgb(255, 255, 255) 40%) !important;
+    /* background: linear-gradient(180deg, rgba(0, 59, 206, 0.1) 0%, rgb(255, 255, 255) 40%) !important; */
 }
 .list-footer-2 {
     margin-bottom: -25px !important;
