@@ -3349,7 +3349,7 @@
                                       <div class="wpb_wrapper">
                                         <div class="wpb_video_wrapper">
                                           <div id="carousel" style="max-width: 1280px; position: relative; margin: auto; overflow: hidden;">
-                                            <div class="slide-container" style="display: flex; transition: transform 1s ease-in-out; gap: 2%;">
+                                            <div class="slide-container" style="display: flex; transition: transform 0.8s ease-in-out; gap: 2%;">
                                               <!-- Slide 1 -->
                                               <div class="mySlide" style="min-width: calc(50% - 1%);">
                                                 <img src="./megapari blue.svg" alt="Slide 1" style="width: 100%;">
@@ -3383,20 +3383,23 @@
                                               <div class="mySlide" style="min-width: calc(50% - 1%);">
                                                 <img src="./megapari  white.svg" alt="Slide 2" style="width: 100%;">
                                               </div>
-                                    
-                                              <!-- Slide 3 -->
+
                                               <div class="mySlide" style="min-width: calc(50% - 1%);">
-                                                <img src="./megapari blue.svg" alt="Slide 3" style="width: 100%;">
+                                                <img src="./megapari blue.svg" alt="Slide 1" style="width: 100%;">
                                               </div>
                                     
-                                              <!-- Slide 4 -->
+                                              <!-- Slide 2 -->
                                               <div class="mySlide" style="min-width: calc(50% - 1%);">
-                                                <img src="./megapari  white.svg" alt="Slide 4" style="width: 100%;">
+                                                <img src="./megapari  white.svg" alt="Slide 2" style="width: 100%;">
+                                              </div>
+
+                                              <div class="mySlide" style="min-width: calc(50% - 1%);">
+                                                <img src="./megapari blue.svg" alt="Slide 1" style="width: 100%;">
                                               </div>
                                     
-                                              <!-- Slide 5 -->
+                                              <!-- Slide 2 -->
                                               <div class="mySlide" style="min-width: calc(50% - 1%);">
-                                                <img src="./megapari blue.svg" alt="Slide 5" style="width: 100%;">
+                                                <img src="./megapari  white.svg" alt="Slide 2" style="width: 100%;">
                                               </div>
                                     
                                               <!-- Additional slides can be added here if needed -->
@@ -3424,6 +3427,7 @@
                                             function showSlides() {
                                               slideIndex = (slideIndex + 1) % totalSlides;
                                               updateSlides();
+                                              slideContainer.style.transition = 'transform 0.8s ease-in-out';
                                               slideContainer.style.transform = `translateX(-${slideIndex * (100 / totalSlides)}%)`;
                                               setTimeout(showSlides, 3000); // Change slide every 3 seconds
                                             }
@@ -3444,7 +3448,7 @@
                                             function endDrag(e) {
                                               if (!isDragging) return;
                                               isDragging = false;
-                                              slideContainer.style.transition = 'transform 1s ease-in-out'; // Re-enable transition
+                                              slideContainer.style.transition = 'transform 0.8s ease-in-out'; // Re-enable transition
                                               const x = e.type === 'touchend' ? e.changedTouches[0].clientX : e.clientX;
                                               const distance = x - startX;
                                               if (distance > 50) { // Swipe right
@@ -3474,7 +3478,7 @@
                                     
                                     <style>
                                       .mySlide {
-                                        transition: transform 0.5s ease, opacity 0.5s ease;
+                                        transition: transform 0.8s ease, opacity 0.8s ease;
                                       }
                                     </style>
                                     
