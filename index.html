@@ -3344,65 +3344,57 @@
 
 
 
-
                                     <div class="nectar_video_player_self_hosted wpb_video_widget wpb_content_element vc_clearfix vc_video-aspect-ratio-43 vc_video-el-width-100 vc_video-align-center" data-border-radius="none" data-shadow="none">
                                       <div class="wpb_wrapper">
                                         <div class="wpb_video_wrapper">
                                           <div id="carousel" style="max-width: 1280px; position: relative; margin: auto; overflow: hidden;">
                                             <div class="slide-container" style="display: flex; transition: transform 0.8s ease-in-out; gap: 2%;">
+                                              
                                               <!-- Slide 1 -->
-                                              <div class="mySlide" style="min-width: calc(50% - 1%);">
+                                              <div class="mySlide" style="min-width: calc(33.33% - 2%); box-sizing: border-box;">
                                                 <img src="./megapari blue.svg" alt="Slide 1" style="width: 100%;">
                                               </div>
                                     
                                               <!-- Slide 2 -->
-                                              <div class="mySlide" style="min-width: calc(50% - 1%);">
+                                              <div class="mySlide" style="min-width: calc(33.33% - 2%); box-sizing: border-box;">
                                                 <img src="./megapari  white.svg" alt="Slide 2" style="width: 100%;">
                                               </div>
                                     
                                               <!-- Slide 3 -->
-                                              <div class="mySlide" style="min-width: calc(50% - 1%);">
+                                              <div class="mySlide" style="min-width: calc(33.33% - 2%); box-sizing: border-box;">
                                                 <img src="./megapari blue.svg" alt="Slide 3" style="width: 100%;">
                                               </div>
                                     
                                               <!-- Slide 4 -->
-                                              <div class="mySlide" style="min-width: calc(50% - 1%);">
+                                              <div class="mySlide" style="min-width: calc(33.33% - 2%); box-sizing: border-box;">
                                                 <img src="./megapari  white.svg" alt="Slide 4" style="width: 100%;">
                                               </div>
                                     
                                               <!-- Slide 5 -->
-                                              <div class="mySlide" style="min-width: calc(50% - 1%);">
+                                              <div class="mySlide" style="min-width: calc(33.33% - 2%); box-sizing: border-box;">
                                                 <img src="./megapari blue.svg" alt="Slide 5" style="width: 100%;">
                                               </div>
-
-                                              <div class="mySlide" style="min-width: calc(50% - 1%);">
-                                                <img src="./megapari blue.svg" alt="Slide 1" style="width: 100%;">
+                                              
+                                              <!-- Slide 6 -->
+                                              <div class="mySlide" style="min-width: calc(33.33% - 2%); box-sizing: border-box;">
+                                                <img src="./megapari blue.svg" alt="Slide 6" style="width: 100%;">
+                                              </div>
+                                              
+                                              <!-- Slide 7 -->
+                                              <div class="mySlide" style="min-width: calc(33.33% - 2%); box-sizing: border-box;">
+                                                <img src="./megapari  white.svg" alt="Slide 7" style="width: 100%;">
+                                              </div>
+                                              
+                                              <!-- Slide 8 -->
+                                              <div class="mySlide" style="min-width: calc(33.33% - 2%); box-sizing: border-box;">
+                                                <img src="./megapari blue.svg" alt="Slide 8" style="width: 100%;">
                                               </div>
                                     
-                                              <!-- Slide 2 -->
-                                              <div class="mySlide" style="min-width: calc(50% - 1%);">
-                                                <img src="./megapari  white.svg" alt="Slide 2" style="width: 100%;">
-                                              </div>
-                                    
-                                              <!-- Slide 3 -->
-                                              <div class="mySlide" style="min-width: calc(50% - 1%);">
-                                                <img src="./megapari blue.svg" alt="Slide 3" style="width: 100%;">
-                                              </div>
-                                    
-                                              <!-- Slide 4 -->
-                                              <div class="mySlide" style="min-width: calc(50% - 1%);">
-                                                <img src="./megapari  white.svg" alt="Slide 4" style="width: 100%;">
-                                              </div>
-                                    
-                                              <!-- Slide 5 -->
-                                              <div class="mySlide" style="min-width: calc(50% - 1%);">
-                                                <img src="./megapari blue.svg" alt="Slide 5" style="width: 100%;">
-                                              </div>
                                             </div>
                                           </div>
                                     
                                           <script>
-                                            let slideIndex = 0;
+                                            let slideIndex = 1; // Start with the second slide as the focused one
                                             const slides = document.querySelectorAll('.mySlide');
                                             const totalSlides = slides.length;
                                             const slideContainer = document.querySelector('.slide-container');
@@ -3411,12 +3403,12 @@
                                     
                                             function updateSlides() {
                                               slides.forEach((slide, index) => {
-                                                slide.style.transform = 'scale(0.6)';  // Zoom out all slides by default
+                                                slide.style.transform = 'scale(0.5)';  // Slightly zoom out all slides by default
                                                 slide.style.opacity = '0.6';           // Reduce opacity for all slides
                                               });
                                     
-                                              slides[slideIndex].style.transform = 'scale(1.2)';  // Zoom in the middle slide
-                                              slides[slideIndex].style.opacity = '1';             // Full opacity for the middle slide
+                                              slides[slideIndex].style.transform = 'scale(1)';  // No zoom for the focused slide
+                                              slides[slideIndex].style.opacity = '1';           // Full opacity for the focused slide
                                             }
                                     
                                             function startDrag(e) {
@@ -3445,7 +3437,7 @@
                                                 slideIndex = (slideIndex + 1) % totalSlides;
                                               }
                                               updateSlides();
-                                              currentTranslate = -slideIndex * carousel.offsetWidth / 2;  // Adjust the translate based on the new slide index
+                                              currentTranslate = -slideIndex * carousel.offsetWidth / 3;  // Adjust the translate based on the new slide index and show 3 images
                                               slideContainer.style.transition = 'transform 0.8s ease-in-out'; // Re-enable transition
                                               slideContainer.style.transform = `translateX(${currentTranslate}px)`;
                                             }
@@ -3459,6 +3451,8 @@
                                             carousel.addEventListener('touchend', endDrag);
                                     
                                             updateSlides(); // Initialize the slides
+                                            currentTranslate = -slideIndex * carousel.offsetWidth / 3;  // Set initial position so the middle slide is in focus
+                                            slideContainer.style.transform = `translateX(${currentTranslate}px)`;
                                           </script>
                                     
                                         </div>
@@ -3471,7 +3465,6 @@
                                       }
                                     </style>
                                     
-
 
 
 
