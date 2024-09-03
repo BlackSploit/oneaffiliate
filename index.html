@@ -3383,23 +3383,20 @@
                                               <div class="mySlide" style="min-width: calc(50% - 1%);">
                                                 <img src="./megapari  white.svg" alt="Slide 2" style="width: 100%;">
                                               </div>
-
+                                    
+                                              <!-- Slide 3 -->
                                               <div class="mySlide" style="min-width: calc(50% - 1%);">
-                                                <img src="./megapari blue.svg" alt="Slide 1" style="width: 100%;">
+                                                <img src="./megapari blue.svg" alt="Slide 3" style="width: 100%;">
                                               </div>
                                     
-                                              <!-- Slide 2 -->
+                                              <!-- Slide 4 -->
                                               <div class="mySlide" style="min-width: calc(50% - 1%);">
-                                                <img src="./megapari  white.svg" alt="Slide 2" style="width: 100%;">
-                                              </div>
-
-                                              <div class="mySlide" style="min-width: calc(50% - 1%);">
-                                                <img src="./megapari blue.svg" alt="Slide 1" style="width: 100%;">
+                                                <img src="./megapari  white.svg" alt="Slide 4" style="width: 100%;">
                                               </div>
                                     
-                                              <!-- Slide 2 -->
+                                              <!-- Slide 5 -->
                                               <div class="mySlide" style="min-width: calc(50% - 1%);">
-                                                <img src="./megapari  white.svg" alt="Slide 2" style="width: 100%;">
+                                                <img src="./megapari blue.svg" alt="Slide 5" style="width: 100%;">
                                               </div>
                                     
                                               <!-- Additional slides can be added here if needed -->
@@ -3422,14 +3419,6 @@
                                     
                                               slides[slideIndex].style.transform = 'scale(1.2)';  // Zoom in the middle slide
                                               slides[slideIndex].style.opacity = '1';             // Full opacity for the middle slide
-                                            }
-                                    
-                                            function showSlides() {
-                                              slideIndex = (slideIndex + 1) % totalSlides;
-                                              updateSlides();
-                                              slideContainer.style.transition = 'transform 0.8s ease-in-out';
-                                              slideContainer.style.transform = `translateX(-${slideIndex * (100 / totalSlides)}%)`;
-                                              setTimeout(showSlides, 3000); // Change slide every 3 seconds
                                             }
                                     
                                             function startDrag(e) {
@@ -3469,7 +3458,6 @@
                                             carousel.addEventListener('touchend', endDrag);
                                     
                                             updateSlides(); // Initialize the slides
-                                            showSlides(); // Start automatic sliding
                                           </script>
                                     
                                         </div>
