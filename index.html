@@ -3398,8 +3398,6 @@
                                               <div class="mySlide" style="min-width: calc(50% - 1%);">
                                                 <img src="./megapari blue.svg" alt="Slide 5" style="width: 100%;">
                                               </div>
-                                    
-                                              <!-- Additional slides can be added here if needed -->
                                             </div>
                                           </div>
                                     
@@ -3409,7 +3407,7 @@
                                             const totalSlides = slides.length;
                                             const slideContainer = document.querySelector('.slide-container');
                                             const carousel = document.getElementById('carousel');
-                                            let startX, isDragging = false;
+                                            let startX, isDragging = false, currentTranslate = 0, prevTranslate = 0;
                                     
                                             function updateSlides() {
                                               slides.forEach((slide, index) => {
@@ -3424,6 +3422,7 @@
                                             function startDrag(e) {
                                               isDragging = true;
                                               startX = e.type === 'touchstart' ? e.touches[0].clientX : e.clientX;
+                                              prevTranslate = currentTranslate;
                                               slideContainer.style.transition = 'none'; // Disable transition during drag
                                             }
                                     
@@ -3431,13 +3430,13 @@
                                               if (!isDragging) return;
                                               const x = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
                                               const distance = x - startX;
-                                              slideContainer.style.transform = `translateX(calc(-${slideIndex * (100 / totalSlides)}% + ${distance}px))`;
+                                              currentTranslate = prevTranslate + distance;
+                                              slideContainer.style.transform = `translateX(${currentTranslate}px)`;
                                             }
                                     
                                             function endDrag(e) {
                                               if (!isDragging) return;
                                               isDragging = false;
-                                              slideContainer.style.transition = 'transform 0.8s ease-in-out'; // Re-enable transition
                                               const x = e.type === 'touchend' ? e.changedTouches[0].clientX : e.clientX;
                                               const distance = x - startX;
                                               if (distance > 50) { // Swipe right
@@ -3446,7 +3445,9 @@
                                                 slideIndex = (slideIndex + 1) % totalSlides;
                                               }
                                               updateSlides();
-                                              slideContainer.style.transform = `translateX(-${slideIndex * (100 / totalSlides)}%)`;
+                                              currentTranslate = -slideIndex * carousel.offsetWidth / 2;  // Adjust the translate based on the new slide index
+                                              slideContainer.style.transition = 'transform 0.8s ease-in-out'; // Re-enable transition
+                                              slideContainer.style.transform = `translateX(${currentTranslate}px)`;
                                             }
                                     
                                             carousel.addEventListener('mousedown', startDrag);
