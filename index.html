@@ -2679,7 +2679,7 @@
                       width="1000"
                       height="172"
                       alt="Crypticorn"
-                      src="./Group 5.svg" style="height: 15vh !important;"
+                      src="./white_logo.svg" style="height: 6vh !important; margin-top: -25px !important;"
                     />
                   </a>
                 </div>
@@ -3319,64 +3319,66 @@
 
 
 
-                                    <div
-                                      class="nectar_video_player_self_hosted wpb_video_widget wpb_content_element vc_clearfix vc_video-aspect-ratio-43 vc_video-el-width-100 vc_video-align-center"
-                                      data-border-radius="none"
-                                      data-shadow="none"
-                                    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <div class="nectar_video_player_self_hosted wpb_video_widget wpb_content_element vc_clearfix vc_video-aspect-ratio-43 vc_video-el-width-100 vc_video-align-center" data-border-radius="none" data-shadow="none">
                                       <div class="wpb_wrapper">
                                         <div class="wpb_video_wrapper">
-
-
-
-
-
                                           <div id="carousel" style="max-width: 1280px; position: relative; margin: auto; overflow: hidden;">
                                             <div class="slide-container" style="display: flex; transition: transform 1s ease-in-out; gap: 2%;">
                                               <!-- Slide 1 -->
                                               <div class="mySlide" style="min-width: calc(50% - 1%);">
                                                 <img src="./megapari blue.svg" alt="Slide 1" style="width: 100%;">
                                               </div>
-                                            
+                                    
                                               <!-- Slide 2 -->
                                               <div class="mySlide" style="min-width: calc(50% - 1%);">
                                                 <img src="./megapari  white.svg" alt="Slide 2" style="width: 100%;">
                                               </div>
-                                          
+                                    
                                               <!-- Slide 3 -->
                                               <div class="mySlide" style="min-width: calc(50% - 1%);">
                                                 <img src="./megapari blue.svg" alt="Slide 3" style="width: 100%;">
                                               </div>
-                                          
+                                    
                                               <!-- Slide 4 -->
                                               <div class="mySlide" style="min-width: calc(50% - 1%);">
                                                 <img src="./megapari  white.svg" alt="Slide 4" style="width: 100%;">
                                               </div>
-
+                                    
+                                              <!-- Slide 5 -->
                                               <div class="mySlide" style="min-width: calc(50% - 1%);">
-                                                <img src="./megapari blue.svg" alt="Slide 4" style="width: 100%;">
+                                                <img src="./megapari blue.svg" alt="Slide 5" style="width: 100%;">
                                               </div>
-
-                                              <div class="mySlide" style="min-width: calc(50% - 1%);">
-                                                <img src="./megapari blue.svg" alt="Slide 4" style="width: 100%;">
-                                              </div>
-
-                                              <div class="mySlide" style="min-width: calc(50% - 1%);">
-                                                <img src="./megapari  white.svg" alt="Slide 4" style="width: 100%;">
-                                              </div>
-
-                                              <div class="mySlide" style="min-width: calc(50% - 1%);">
-                                                <img src="./megapari blue.svg" alt="Slide 4" style="width: 100%;">
-                                              </div>
-
-                                              <div class="mySlide" style="min-width: calc(50% - 1%);">
-                                                <img src="./megapari blue.svg" alt="Slide 4" style="width: 100%;">
-                                              </div>
-                                              
+                                    
                                               <!-- Additional slides can be added here if needed -->
                                             </div>
                                           </div>
-                                          
+                                    
                                           <script>
                                             let slideIndex = 0;
                                             const slides = document.querySelectorAll('.mySlide');
@@ -3384,45 +3386,52 @@
                                             const slideContainer = document.querySelector('.slide-container');
                                             const carousel = document.getElementById('carousel');
                                             let startX, isDragging = false;
-                                          
-                                            function showSlides() {
-                                              slideIndex++;
-                                              if (slideIndex >= totalSlides) { 
-                                                slideIndex = 0; 
-                                              }
-                                              slideContainer.style.transform = `translateX(-${slideIndex * (100 / totalSlides)}%)`;
-                                              setTimeout(showSlides, 1000); // Change slide every 3 seconds
+                                    
+                                            function updateSlides() {
+                                              slides.forEach((slide, index) => {
+                                                slide.style.transform = 'scale(0.8)';  // Zoom out all slides by default
+                                                slide.style.opacity = '0.6';           // Reduce opacity for all slides
+                                              });
+                                    
+                                              slides[slideIndex].style.transform = 'scale(1.2)';  // Zoom in the middle slide
+                                              slides[slideIndex].style.opacity = '1';             // Full opacity for the middle slide
                                             }
-                                          
+                                    
+                                            function showSlides() {
+                                              slideIndex = (slideIndex + 1) % totalSlides;
+                                              updateSlides();
+                                              slideContainer.style.transform = `translateX(-${slideIndex * (100 / totalSlides)}%)`;
+                                              setTimeout(showSlides, 3000); // Change slide every 3 seconds
+                                            }
+                                    
                                             function startDrag(e) {
                                               isDragging = true;
                                               startX = e.type === 'touchstart' ? e.touches[0].clientX : e.clientX;
                                               slideContainer.style.transition = 'none'; // Disable transition during drag
                                             }
-                                          
+                                    
                                             function dragMove(e) {
                                               if (!isDragging) return;
                                               const x = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
                                               const distance = x - startX;
                                               slideContainer.style.transform = `translateX(calc(-${slideIndex * (100 / totalSlides)}% + ${distance}px))`;
                                             }
-                                          
+                                    
                                             function endDrag(e) {
                                               if (!isDragging) return;
                                               isDragging = false;
-                                              slideContainer.style.transition = 'transform 2s ease-in-out'; // Re-enable transition
+                                              slideContainer.style.transition = 'transform 1s ease-in-out'; // Re-enable transition
                                               const x = e.type === 'touchend' ? e.changedTouches[0].clientX : e.clientX;
                                               const distance = x - startX;
                                               if (distance > 50) { // Swipe right
-                                                slideIndex--;
-                                                if (slideIndex < 0) { slideIndex = totalSlides - 1; }
+                                                slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
                                               } else if (distance < -50) { // Swipe left
-                                                slideIndex++;
-                                                if (slideIndex >= totalSlides) { slideIndex = 0; }
+                                                slideIndex = (slideIndex + 1) % totalSlides;
                                               }
+                                              updateSlides();
                                               slideContainer.style.transform = `translateX(-${slideIndex * (100 / totalSlides)}%)`;
                                             }
-                                          
+                                    
                                             carousel.addEventListener('mousedown', startDrag);
                                             carousel.addEventListener('mousemove', dragMove);
                                             carousel.addEventListener('mouseup', endDrag);
@@ -3430,39 +3439,34 @@
                                             carousel.addEventListener('touchstart', startDrag);
                                             carousel.addEventListener('touchmove', dragMove);
                                             carousel.addEventListener('touchend', endDrag);
-                                          
+                                    
+                                            updateSlides(); // Initialize the slides
                                             showSlides(); // Start automatic sliding
                                           </script>
-                                          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                    
                                         </div>
                                       </div>
                                     </div>
+                                    
+                                    <style>
+                                      .mySlide {
+                                        transition: transform 0.5s ease, opacity 0.5s ease;
+                                      }
+                                    </style>
+                                    
 
 
 
 
+
+
+
+
+
+
+
+
+                                    
 
 
 
