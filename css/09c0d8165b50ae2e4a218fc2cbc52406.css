@@ -14586,7 +14586,7 @@ body
 }
 @media only screen and (max-width: 999px) {
   body #slide-out-widget-area .inner .off-canvas-menu-container li a {
-    font-size: 1.1rem !important;
+    font-size: 0.9rem !important;
     line-height: 1 !important;
   }
 }
