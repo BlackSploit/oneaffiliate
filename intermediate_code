@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+struct Instruction {
+    char op[3];    
+    char arg1[5];   
+    char arg2[5];   
+    char result[5]; 
+};
+
+
+struct Instruction code[100];
+int codeIndex = 0; 
+
+void generateCode(char *op, char *arg1, char *arg2, char *result) {
+    strcpy(code[codeIndex].op, op);
+    strcpy(code[codeIndex].arg1, arg1);
+    strcpy(code[codeIndex].arg2, arg2);
+    strcpy(code[codeIndex].result, result);
+    codeIndex++;
+}
+
+void displayCode() {
+    printf("\nGenerated Intermediate Code:\n");
+    for (int i = 0; i < codeIndex; i++) {
+        printf("%s = %s %s %s\n", code[i].result, code[i].arg1, code[i].op, code[i].arg2);
+    }
+}
+
+int main() {
+    char temp[5];
+    int tempVarCount = 1;
+
+    sprintf(temp, "t%d", tempVarCount++);
+    generateCode("*", "c", "d", temp);
+
+ 
+    sprintf(temp, "t%d", tempVarCount++);
+    generateCode("+", "b", "t1", temp);
+
+ 
+    generateCode("=", "t2", "", "a");
+
+
+    displayCode();
+
+    return 0;
+}
