@@ -20,6 +20,37 @@
         counter-increment: item;
       }
     </style>
+
+
+<style>
+	/* Prevent text selection on the entire page */
+	body {
+		user-select: none; /* Prevent text selection */
+		-webkit-user-select: none; /* Safari */
+		-moz-user-select: none; /* Firefox */
+		-ms-user-select: none; /* Internet Explorer/Edge */
+	}
+</style>
+<script>
+	// Disable right-click context menu
+	document.addEventListener('contextmenu', function(e) {
+		e.preventDefault();
+	});
+
+	// Optionally, prevent keyboard shortcuts for copy (Ctrl+C)
+	document.addEventListener('keydown', function(e) {
+		if (e.ctrlKey && (e.key === 'c' || e.key === 'C')) {
+			e.preventDefault();
+		}
+	});
+</script>
+
+
+
+
+
+
+
     <style id="global-styles-inline-css" type="text/css">
       body {
         --wp--preset--color--black: #000000;
