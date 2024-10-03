@@ -459,7 +459,7 @@ body {
   color: #fff !important;
   border: 0px solid #0d83f90f;
   border-radius: 100px;
-  background-image: linear-gradient(to right,#003bce,#2ac4ea);
+  background-color: #2979ff;
   padding: 16px 52px;
   font-size: 16px;
   font-weight: 600;
@@ -690,7 +690,7 @@ body {
   padding: 0 24px;
 }
 #about .article_block-item {
-  background-color: rgba(28, 167, 213, 0.109);
+  background-color: rgba(0, 0, 0, 0.817);
   padding: 32px;
   margin-bottom: 32px;
 }
