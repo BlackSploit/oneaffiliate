@@ -3667,7 +3667,7 @@
 
 <style>
     .animated-text {
-        background: linear-gradient(to right, #003bce, #f9d423, #2ac4ea);
+        background: linear-gradient(to right, #668ae5,  #2ac4ea);
         -webkit-background-clip: text;
         color: transparent;
         background-size: 300% auto;
@@ -3696,29 +3696,34 @@
 
 
 
-<div class="button-group" style="display: flex; background-color: #f0f2f5; padding: 10px; border-radius: 25px; width: max-content; margin-left: -19px;">
-  <div class="button active" id="revshare" style="display: flex; align-items: center; padding: 8px 15px; border-radius: 25px; margin-right: 10px; cursor: pointer; background-color: #2979ff; color: white; transition: background-color 0.3s; position: relative;">
-    <span>CPA</span>
-    <div class="tooltip" style="position: relative; display: inline-block;">
-      <span class="tooltip-icon" style="margin-left: 8px; width: 16px; height: 16px; background-color: white; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; color: #2979ff; font-weight: bold; font-size: 12px; cursor: pointer;">?</span>
-      <span class="tooltiptext" style="visibility: hidden; width: 190px; background-color: rgb(240, 240, 240); color: rgb(62, 59, 59); text-align: center; padding: 5px; border-radius: 10px; position: absolute; z-index: 1; bottom: 150%; left: 50%; transform: translateX(-30%); opacity: 0; transition: opacity 0.3s; font-size: 10px;">The CPA payment is a fixed payment for each player who completes a target action.</span>
+<div style="display: flex; justify-content: center; background-color: #f0f2f5; padding: 0px 0; border-radius: 50px; ">
+  <div class="button-group" style="display: flex; background-color: #f0f2f5; padding: 10px 15px; border-radius: 50px; width: max-content;">
+    <div class="button active" id="revshare" style="display: flex; align-items: center; padding: 5px 10px; border-radius: 50px; margin-right: 5px; cursor: pointer; background-color: #2979ff; color: white; transition: background-color 0.3s; position: relative; font-size: 15px;">
+      <span>CPA</span>
+      <div class="tooltip" style="position: relative; display: inline-block;">
+        <span class="tooltip-icon" style="margin-left: 5px; width: 14px; height: 14px; background-color: white; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; color: #2979ff; font-weight: bold; font-size: 15px; cursor: pointer;">?</span>
+        <span class="tooltiptext" style="visibility: hidden; width: 170px; background-color: rgb(240, 240, 240); color: rgb(62, 59, 59); text-align: center; padding: 4px; border-radius: 8px; position: absolute; z-index: 1; bottom: 150%; left: 50%; transform: translateX(-30%); opacity: 0; transition: opacity 0.3s; font-size: 9px;">The CPA payment is a fixed payment for each player who completes a target action.</span>
+      </div>
     </div>
-  </div>
-  <div class="button inactive" id="cpa" style="display: flex; align-items: center; padding: 8px 15px; border-radius: 25px; margin-right: 10px; cursor: pointer; background-color: white; color: black; transition: background-color 0.3s; position: relative;">
-    <span>RevShare</span>
-    <div class="tooltip" style="position: relative; display: inline-block;">
-      <span class="tooltip-icon" style="margin-left: 8px; width: 16px; height: 16px; background-color: white; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; color: #2979ff; font-weight: bold; font-size: 12px; cursor: pointer;">?</span>
-      <span class="tooltiptext" style="visibility: hidden; width: 190px; background-color: rgb(240, 240, 240); color: rgb(62, 59, 59); text-align: center; padding: 5px; border-radius: 10px; position: absolute; z-index: 1; bottom: 150%; left: 50%; transform: translateX(-50%); opacity: 0; transition: opacity 0.3s; font-size: 10px;">For every new customer you refer, you receive a lifetime income from the advertiser's profits</span>
+    <div class="button inactive" id="cpa" style="display: flex; align-items: center; padding: 5px 10px; border-radius: 50px; margin-right: 5px; cursor: pointer; background-color: white; color: black; transition: background-color 0.3s; position: relative; font-size: 15px;">
+      <span>RevShare</span>
+      <div class="tooltip" style="position: relative; display: inline-block;">
+        <span class="tooltip-icon" style="margin-left: 5px; width: 14px; height: 14px; background-color: white; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; color: #2979ff; font-weight: bold; font-size: 15px; cursor: pointer;">?</span>
+        <span class="tooltiptext" style="visibility: hidden; width: 170px; background-color: rgb(240, 240, 240); color: rgb(62, 59, 59); text-align: center; padding: 4px; border-radius: 8px; position: absolute; z-index: 1; bottom: 150%; left: 50%; transform: translateX(-50%); opacity: 0; transition: opacity 0.3s; font-size: 9px;">For every new customer you refer, you receive a lifetime income from the advertiser's profits</span>
+      </div>
     </div>
-  </div>
-  <div class="button inactive" id="cps" style="display: flex; align-items: center; padding: 8px 15px; border-radius: 25px; margin-right: 10px; cursor: pointer; background-color: white; color: black; transition: background-color 0.3s; position: relative;">
-    <span>Hybrid</span>
-    <div class="tooltip" style="position: relative; display: inline-block;">
-      <span class="tooltip-icon" style="margin-left: 8px; width: 16px; height: 16px; background-color: white; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; color: #2979ff; font-weight: bold; font-size: 12px; cursor: pointer;">?</span>
-      <span class="tooltiptext" style="visibility: hidden; width: 190px; background-color: rgb(240, 240, 240); color: rgb(62, 59, 59); text-align: center; padding: 5px; border-radius: 10px; position: absolute; z-index: 1; bottom: 150%; left: 50%; transform: translateX(-80%); opacity: 0; transition: opacity 0.3s; font-size: 10px;">Combination of both CPA and Hybrid model</span>
+    <div class="button inactive" id="cps" style="display: flex; align-items: center; padding: 5px 10px; border-radius: 50px; margin-right: 5px; cursor: pointer; background-color: white; color: black; transition: background-color 0.3s; position: relative; font-size: 15px;">
+      <span>Hybrid</span>
+      <div class="tooltip" style="position: relative; display: inline-block;">
+        <span class="tooltip-icon" style="margin-left: 5px; width: 14px; height: 14px; background-color: white; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; color: #2979ff; font-weight: bold; font-size: 15px; cursor: pointer;">?</span>
+        <span class="tooltiptext" style="visibility: hidden; width: 170px; background-color: rgb(240, 240, 240); color: rgb(62, 59, 59); text-align: center; padding: 4px; border-radius: 8px; position: absolute; z-index: 1; bottom: 150%; left: 50%; transform: translateX(-80%); opacity: 0; transition: opacity 0.3s; font-size: 9px;">Combination of both CPA and Hybrid model</span>
+      </div>
     </div>
   </div>
 </div>
+
+
+
 
 
 
@@ -3804,11 +3809,6 @@
                                     >
                                       <div class="flickity-viewport">
                                         <div class="flickity-slider" style="background-color: rgba(191, 228, 255, 0.194); border-radius: 25px;">
-
-
-
-                                      
-
                                           <div class="cell">
                                             <div class="inner-wrap-outer">
                                               <div class="inner-wrap">
@@ -4043,9 +4043,340 @@
                                               </div>
                                             </div>
                                           </div>
+
+
+
+
+                                          
+
+
+
+
+
+
+
+
+
+
+
+
                                         </div>
                                       </div>
                                     </div>
+
+
+
+
+
+                                    <div
+                                    class="nectar-flickity not-initialized nectar-carousel tb-spacing-0 vertical-alignment-middle ticker-rotate"
+                                    data-ticker-speed="slow"
+                                    data-centered-cells="false"
+                                    data-pause-on-hover=""
+                                    data-touch-icon-color="default"
+                                    data-control-color="default"
+                                    data-overflow="hidden"
+                                    data-r-bottom-total=""
+                                    data-drag-scale=""
+                                    data-wrap="wrap"
+                                    data-spacing="5px"
+                                    data-controls="none"
+                                    data-pagination-alignment="default"
+                                    data-adaptive-height=""
+                                    data-border-radius="none"
+                                    data-column-border=""
+                                    data-column-padding="10px"
+                                    data-format="default"
+                                    data-autoplay="true"
+                                    data-autoplay-dur="0"
+                                    data-control-style="material_pagination"
+                                    data-desktop-columns="3"
+                                    data-small-desktop-columns="3"
+                                    data-tablet-columns="3"
+                                    data-phone-columns="3"
+                                    data-column-color=""
+                                  >
+                                    <div class="flickity-viewport">
+                                      <div class="flickity-slider" style="background-color: rgba(191, 228, 255, 0.194); border-radius: 25px;">
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="https://www.crypticorn.com/wp-content/uploads/2024/04/DTC_group_crypticornAI.webp"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="https://www.crypticorn.com/wp-content/uploads/2024/04/DTC_group_crypticornAI.webp"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="https://www.crypticorn.com/wp-content/uploads/2024/04/DTC_group_crypticornAI.webp"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+
+                                        
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="https://www.crypticorn.com/wp-content/uploads/2024/04/DTC_group_crypticornAI.webp"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="https://www.crypticorn.com/wp-content/uploads/2024/04/DTC_group_crypticornAI.webp"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="./image/images (5).jpeg"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="./image/images (5).jpeg"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+
+
+
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                   </div>
 
@@ -4340,6 +4671,292 @@
                                         </div>
                                       </div>
                                     </div>
+
+
+
+
+
+
+
+
+                                    <div 
+                                    class="nectar-flickity not-initialized nectar-carousel tb-spacing-0 vertical-alignment-middle ticker-rotate"
+                                    data-ticker-speed="slow"
+                                    data-centered-cells="false"
+                                    data-pause-on-hover=""
+                                    data-touch-icon-color="default"
+                                    data-control-color="default"
+                                    data-overflow="hidden"
+                                    data-r-bottom-total=""
+                                    data-drag-scale=""
+                                    data-wrap="wrap"
+                                    data-spacing="5px"
+                                    data-controls="none"
+                                    data-pagination-alignment="default"
+                                    data-adaptive-height=""
+                                    data-border-radius="none"
+                                    data-column-border=""
+                                    data-column-padding="10px"
+                                    data-format="default"
+                                    data-autoplay="false"
+                                    data-autoplay-dur="0"
+                                    data-control-style="material_pagination"
+                                    data-desktop-columns="3"
+                                    data-small-desktop-columns="3"
+                                    data-tablet-columns="3"
+                                    data-phone-columns="3"
+                                    data-column-color=""
+                                  >
+                                    <div class="flickity-viewport">
+                                      <div class="flickity-slider" style="background-color: rgba(177, 218, 248, 0.194); border-radius: 25px;">
+
+
+
+                                    
+
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="./image/paripesa-affiliates-logo.png"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="./image/paripesa-affiliates-logo.png"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="./image/paripesa-affiliates-logo.png"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+
+                                        
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="./image/paripesa-affiliates-logo.png"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="./image/images (5).jpeg"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="./image/images (5).jpeg"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="./image/images (5).jpeg"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+
+
+
+
                                   </div>
 
 
@@ -4632,6 +5249,290 @@
                                         </div>
                                       </div>
                                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <div 
+                                    class="nectar-flickity not-initialized nectar-carousel tb-spacing-0 vertical-alignment-middle ticker-rotate"
+                                    data-ticker-speed="slow"
+                                    data-centered-cells="false"
+                                    data-pause-on-hover=""
+                                    data-touch-icon-color="default"
+                                    data-control-color="default"
+                                    data-overflow="hidden"
+                                    data-r-bottom-total=""
+                                    data-drag-scale=""
+                                    data-wrap="wrap"
+                                    data-spacing="5px"
+                                    data-controls="none"
+                                    data-pagination-alignment="default"
+                                    data-adaptive-height=""
+                                    data-border-radius="none"
+                                    data-column-border=""
+                                    data-column-padding="10px"
+                                    data-format="default"
+                                    data-autoplay="false"
+                                    data-autoplay-dur="0"
+                                    data-control-style="material_pagination"
+                                    data-desktop-columns="3"
+                                    data-small-desktop-columns="3"
+                                    data-tablet-columns="3"
+                                    data-phone-columns="3"
+                                    data-column-color=""
+                                  >
+                                    <div class="flickity-viewport">
+                                      <div class="flickity-slider" style="background-color: rgba(157, 214, 255, 0.194); border-radius: 25px;">
+
+
+
+                                    
+
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="./image/Gemini_Generated_Image_16ipif16ipif16ip.jfif"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="./image/images (5).jpeg"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="./image/images (5).jpeg"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+
+                                        
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="./image/images (5).jpeg"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="./image/images (5).jpeg"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="./image/images (5).jpeg"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="cell">
+                                          <div class="inner-wrap-outer">
+                                            <div class="inner-wrap">
+                                              <div
+                                                class="img-with-aniamtion-wrap center custom-width-5vw custom-width-phone-15vw"
+                                                data-max-width="custom"
+                                                data-max-width-mobile="default"
+                                                data-shadow="none"
+                                                data-animation="none"
+                                              >
+                                                <div class="inner">
+                                                  <div class="hover-wrap">
+                                                    <div
+                                                      class="hover-wrap-inner"
+                                                    >
+                                                      <img
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                        class="img-with-animation bn_picture skip-lazy"
+                                                        data-delay="0"
+                                                        height="250"
+                                                        width="785"
+                                                        data-animation="none"
+                                                        src="./image/images (5).jpeg"
+                                                        alt=""
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                                   </div>
                               <!-- slides -->
 
@@ -4985,7 +5886,7 @@
                                                 data-stagger="true"
                                                 data-custom-font-size="false"
                                               >
-                                                <h4 style="color: #292929; font-weight: 400 !important;">
+                                                <h4 style="color: #616161; font-weight: 700 !important;">
                                                   India's online gambling market has grown to $3.27 billion be over the past two years, driven by mobile betting and increased internet use  On 2023 affiliates & partners were paid out about 60,10,59,24,000 ₹ (720 Million $ ) Growth of 78% than usal per year
                                                 </h4>
                                               </div>
@@ -5490,8 +6391,8 @@
 
           
           <div style="background-color: #000; color: #fff; text-align: center; padding: 50px 20px;">
-            <h1 style="font-size: 28px !important; margin-bottom: 20px; animation: translateAnimation 4s linear infinite;">
-                Stay Ahead with Exclusive Offers
+            <h1 style="font-size: 22px !important; margin-bottom: 20px; animation: translateAnimation 4s linear infinite;">
+              Elevate Your Strategy with Access to Exclusive Offers
             </h1>
             <form action="#" style="display: flex; justify-content: center; width: 100%; max-width: 100%; padding: 0;">
                 <input type="email" placeholder="Your email address" required 
@@ -5510,7 +6411,7 @@
                     }
                     50% {
                         transform: translateX(1px);
-                        color: rgb(175, 216, 243);
+                        color: rgb(192, 223, 244);
                     }
                     100% {
                         transform: translateX(0);
