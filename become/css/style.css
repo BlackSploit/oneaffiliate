@@ -459,7 +459,7 @@ body {
   color: #fff !important;
   border: 0px solid #0d83f90f;
   border-radius: 100px;
-  background-color: #2979ff;
+  background-color: #000000;
   padding: 16px 52px;
   font-size: 16px;
   font-weight: 600;
@@ -1586,7 +1586,7 @@ p.error {
   }
   .site_logo {
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
   .first_block .nav {
     padding: 32px 24px;
@@ -1864,14 +1864,14 @@ p.error {
   .first_block__content .content_item__title {
     margin-top: 24px;
     margin-bottom: 16px;
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 25px;
+    line-height: 32px;
   }
   .first_block__content .content_item__text {
     padding: 0;
     margin-bottom: 16px;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 21px;
   }
   .first_block__content .content_item .form_wrapper {
     padding: 48px 60px 43px;
