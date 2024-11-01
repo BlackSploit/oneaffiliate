@@ -21,35 +21,28 @@
       }
     </style>
 
+    <style>
+      /* Prevent text selection on the entire page */
+      body {
+        user-select: none; /* Prevent text selection */
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+      }
+    </style>
+    <script>
+      // Disable right-click context menu
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      });
 
-<style>
-	/* Prevent text selection on the entire page */
-	body {
-		user-select: none; /* Prevent text selection */
-		-webkit-user-select: none; /* Safari */
-		-moz-user-select: none; /* Firefox */
-		-ms-user-select: none; /* Internet Explorer/Edge */
-	}
-</style>
-<script>
-	// Disable right-click context menu
-	document.addEventListener('contextmenu', function(e) {
-		e.preventDefault();
-	});
-
-	// Optionally, prevent keyboard shortcuts for copy (Ctrl+C)
-	document.addEventListener('keydown', function(e) {
-		if (e.ctrlKey && (e.key === 'c' || e.key === 'C')) {
-			e.preventDefault();
-		}
-	});
-</script>
-
-
-
-
-
-
+      // Optionally, prevent keyboard shortcuts for copy (Ctrl+C)
+      document.addEventListener("keydown", function (e) {
+        if (e.ctrlKey && (e.key === "c" || e.key === "C")) {
+          e.preventDefault();
+        }
+      });
+    </script>
 
     <style id="global-styles-inline-css" type="text/css">
       body {
@@ -209,6 +202,36 @@
         margin-left: auto !important;
         margin-right: auto !important;
       }
+
+
+      #full_width_portfolio .project-title.parallax-effect,
+#page-header-wrap,
+.ascend .container-wrap,
+.ascend .project-title,
+.carousel-wrap .left-border,
+.carousel-wrap .right-border,
+.carousel-wrap[data-full-width="true"] .carousel-heading,
+.container-wrap,
+.material .ocm-effect-wrap,
+.nectar-global-section.after-nav,
+.nectar-global-section.before-footer,
+.page-header-no-bg,
+.page-template-template-portfolio-php .portfolio-items .col.span_3,
+.page-template-template-portfolio-php .portfolio-items .col.span_4,
+.portfolio-items .col,
+.project-title,
+.single-post #single-below-header.fullscreen-header,
+.single-post.ascend #page-header-bg.fullscreen-header,
+.wpml-ls-statics-footer,
+body,
+body .nectar-quick-view-box div.product .product div.summary,
+body .vc_text_separator div,
+body.box-rolling,
+body[data-footer-reveal="1"].ascend.box-rolling,
+body[data-footer-reveal="1"].box-rolling {
+  background-color: #323232 !important;
+}
+
       body .is-layout-constrained > .alignwide {
         max-width: var(--wp--style--global--wide-size);
       }
@@ -440,8 +463,10 @@
       }
     </style>
 
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/icomoon@1.0.0/style.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/icomoon@1.0.0/style.min.css"
+    />
     <link
       rel="stylesheet"
       id="wphb-1-css"
@@ -449,7 +474,6 @@
       type="text/css"
       media="all"
     />
-   
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -2608,22 +2632,6 @@
       <div class="ocm-effect-wrap-inner">
         <div id="header-space" data-header-mobile-fixed="1"></div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <div
           id="header-outer"
           data-has-menu="true"
@@ -2709,7 +2717,11 @@
                       width="1000"
                       height="172"
                       alt="Crypticorn"
-                      src="./white_logo.svg" style="height: 4.5vh !important; margin-top: -25px !important;"
+                      src="./white_logo.svg"
+                      style="
+                        height: 4.5vh !important;
+                        margin-top: -25px !important;
+                      "
                     />
                   </a>
                 </div>
@@ -2719,7 +2731,7 @@
                   <div class="nectar-mobile-only mobile-header">
                     <div class="inner"></div>
                   </div>
-                 
+
                   <div
                     class="slide-out-widget-area-toggle mobile-icon slide-out-from-right"
                     data-custom-color="true"
@@ -2751,7 +2763,7 @@
                           ><span class="menu-title-text">Home</span></a
                         >
                       </li>
-                     
+
                       <li
                         id="menu-item-531"
                         class="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-531"
@@ -2769,10 +2781,10 @@
                         >
                       </li>
                       <li
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9488"
-                    >
-                      <a href="./index.html#faqqq">FAQ</a>
-                    </li>
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9488"
+                      >
+                        <a href="./index.html#faqqq">FAQ</a>
+                      </li>
 
                       <li
                         id="menu-item-9488"
@@ -2782,7 +2794,6 @@
                           ><span class="menu-title-text">Partners</span></a
                         >
                       </li>
-
 
                       <li
                         id="menu-item-9488"
@@ -2798,12 +2809,12 @@
                         class="menu-item menu-item-type-post_type menu-item-object-page button_solid_color menu-item-619"
                       >
                         <a href="./become/affiliate.html"
-                          ><span class="menu-title-text">Become An Affiliate</span></a
+                          ><span class="menu-title-text"
+                            >Become An Affiliate</span
+                          ></a
                         >
                       </li>
-                     
                     </ul>
-                    
                   </nav>
                 </div>
 
@@ -2819,16 +2830,18 @@
           <div class="container-wrap">
             <div class="container main-content" role="main">
               <div class="row">
+                <!-- <img src="./image/Group 48095552.svg" alt="" style="margin-top: -45px;"> -->
+                <!-- <img src="./blue box.svg" alt="" style="margin-top: -10vh; z-index: 99999;"> -->
+
                 <div
-                  id="heading_home"
+                  id="fws_66947135eff37"
                   data-column-margin="default"
                   data-midnight="dark"
-                  data-nectar-animated-gradient-settings='{"color_1":"#dde5ff","color_2":"#dde5ff","speed":"250","blending_mode":"organic"}'
-                  class="wpb_row vc_row-fluid vc_row top-level full-width-section vc_row-o-full-height vc_row-o-columns-middle vc_row-o-equal-height vc_row-flex vc_row-o-content-middle home_hero top_padding_phone_0px bottom_padding_phone_70px"
-                  style="padding-top: 45px; padding-bottom: 0px; "
+                  class="wpb_row vc_row-fluid vc_row has-global-section"
+                  style="padding-top: 0px; padding-bottom: 0px; margin-top: 7vh"
                 >
                   <div
-                    class="row-bg-wrap has-animated-gradient"
+                    class="row-bg-wrap"
                     data-bg-animation="none"
                     data-bg-animation-delay=""
                     data-bg-overlay="false"
@@ -2836,18 +2849,10 @@
                     <div class="inner-wrap row-bg-layer">
                       <div class="row-bg viewport-desktop" style=""></div>
                     </div>
-                    
-                    <div id="chicaa"
-                      class="row-bg-overlay row-bg-layer"
-                      style="
-                        background-color: rgba(0, 0, 0, 0.811);
-                        border-radius: 0 0 65px 65px;
-                      "
-                    ></div>
                   </div>
                   <div class="row_col_wrap_12 col span_12 dark left">
                     <div
-                      class="vc_col-sm-12 wpb_column column_container vc_column_container col top_margin_phone_3vw bottom_margin_phone_3vw right_margin_phone_3vw left_margin_phone_3vw bottom_padding_desktop_0vw"
+                      class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone"
                       data-padding-pos="all"
                       data-has-bg-color="false"
                       data-bg-color=""
@@ -2858,287 +2863,63 @@
                       <div class="vc_column-inner">
                         <div class="wpb_wrapper">
                           <div
-                            id="fws_6675db70cec93"
-                            data-midnight=""
-                            data-column-margin="default"
-                            class="wpb_row vc_row-fluid vc_row inner_row vc_row-o-equal-height vc_row-flex vc_row-o-content-middle vc_hidden-xs reverse_columns_column_phone"
-                            style=""
+                            style="margin-top: 0"
+                            id="fws_66947135f05bc"
+                            data-column-margin="30px"
+                            data-midnight="dark"
+                            class="wpb_row vc_row-fluid vc_row full-width-content vc_row-o-equal-height vc_row-flex vc_row-o-content-top right_padding_5vw left_padding_5vw first-section loaded"
                           >
-                            <div class="row-bg-wrap">
-                              <div class="row-bg"></div>
+                            <div
+                              class="row-bg-wrap"
+                              data-bg-animation="none"
+                              data-bg-animation-delay=""
+                              data-bg-overlay="false"
+                            >
+                              <div class="inner-wrap row-bg-layer">
+                                <div
+                                  class="row-bg viewport-desktop using-bg-color"
+                                  style="
+                                    background-color: rgba(0, 59, 206, 0.06);
+                                  "
+                                ></div>
+                              </div>
                             </div>
-                            <div class="row_col_wrap_12_inner col span_12 left">
+                            <div class="row_col_wrap_12 col span_12 dark left">
                               <div
-                                class="vc_col-sm-6 hero wpb_column column_container vc_column_container col child_column has-animation force-phone-text-align-center left_padding_phone_0px top_padding_phone_0px right_padding_desktop_0pct right_padding_phone_0px bottom_padding_desktop_5pct bottom_padding_phone_0px"
+                                class="vc_col-sm-2 wpb_column column_container vc_column_container col nectar-mask-reveal-bg nectar-mask-reveal-bg-left-dir nectar-mask-reveal-bg-straight-shape left_padding_desktop_2vw top_padding_desktop_5vw top_padding_phone_4vw right_padding_desktop_2vw bottom_padding_desktop_2vw bottom_padding_phone_4vw"
+                                data-border-radius="20px"
                                 data-padding-pos="all"
                                 data-has-bg-color="false"
                                 data-bg-color=""
                                 data-bg-opacity="1"
-                                data-animation="slight-fade-in-from-bottom"
+                                data-animation=""
+                                data-delay="0"
+                              >
+                                <div class="vc_column-inner">
+                                  <div class="wpb_wrapper"></div>
+                                </div>
+                              </div>
+
+                              <div
+                                class="vc_col-sm-8 ico-page hero wpb_column column_container vc_column_container col centered-text padding-4-percent force-desktop-text-align-center inherit_tablet padding-2-percent_phone"
+                                data-padding-pos="top"
+                                data-has-bg-color="false"
+                                data-bg-color=""
+                                data-bg-opacity="1"
+                                data-animation=""
                                 data-delay="0"
                               >
                                 <div class="vc_column-inner">
                                   <div class="wpb_wrapper">
-                                    <div 
-                                      class="nectar-split-heading"
-                                      data-align="default"
-                                      data-m-align="inherit"
-                                      data-text-effect="default"
-                                      data-animation-type="line-reveal-by-space"
-                                      data-animation-delay="0"
-                                      data-animation-offset=""
-                                      data-m-rm-animation=""
-                                      data-stagger="true"
-                                      data-custom-font-size="false"
-                                    >
-                                      <h1 style="color: white">
-                                        Maximise your Profits with best Partners
-                                      </h1>
-                                    </div>
                                     <div
                                       class="nectar-gradient-text"
                                       data-direction="diagonal"
                                       data-color="extra-color-gradient-1"
-                                      style="margin-top: -20px"
+                                      style=""
                                     >
-                                      <h1>We Are One Affiliate</h1>
+                                      <h2>Our Partners</h2>
                                     </div>
 
-
-                                    <div
-                                    class="nectar-cta cta_hero hover_color_003bce text_hover_color_ffffff border_color_003bce border_thickness_2px border_radius_165px alignment_tablet_default alignment_phone_default display_tablet_inherit display_phone_inherit font_size_phone_14px"
-                                    data-color="default"
-                                    data-using-bg="false"
-                                    data-style="arrow-animation"
-                                    data-display="block"
-                                    data-alignment="left"
-                                    data-text-color="custom"
-                                    style="margin-top: 60px"
-                                  >
-                                    <span
-                                      style="color: #003bce"
-                                      class="nectar-button-type"
-                                      ><span
-                                        class="link_wrap"
-                                        style="
-                                          padding-top: 15px;
-                                          padding-right: 25px;
-                                          padding-bottom: 15px;
-                                          padding-left: 25px;
-                                        "
-                                        ><a
-                                          class="link_text"
-                                          role="button"
-                                          href="./become/affiliate.html"
-                                          ><span class="text"
-                                            >Become an Affiliate</span
-                                          ><svg
-                                            class="next-arrow"
-                                            aria-hidden="true"
-                                            width="20px"
-                                            height="25px"
-                                            viewBox="0 0 50 80"
-                                            xml:space="preserve"
-                                          >
-                                            <polyline
-                                              stroke="#ffffff"
-                                              stroke-width="9"
-                                              fill="none"
-                                              stroke-linecap="round"
-                                              stroke-linejoin="round"
-                                              points="0, 0 45, 40 0, 80"
-                                            />
-                                          </svg>
-                                          <span
-                                            class="line"
-                                            style="background-color: #003bce"
-                                          ></span> </a></span
-                                    ></span>
-                                  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    <!-- <div
-                                      class="nectar-split-heading"
-                                      data-align="default"
-                                      data-m-align="inherit"
-                                      data-text-effect="default"
-                                      data-animation-type="line-reveal-by-space"
-                                      data-animation-delay="0"
-                                      data-animation-offset=""
-                                      data-m-rm-animation=""
-                                      data-stagger="true"
-                                      data-custom-font-size="false"
-                                    >
-                                      <p
-                                        style="max-width: 600px; color: #6b6b6b"
-                                      >
-                                        One Affiliate is your trusted growth engine. We connect you with high-performing affiliates who perfectly align with your brand and target audience.
-                                      </p>
-                                      <br>
-                                    </div> -->
-
-
-
-
-
-
-
-                                    
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div
-                                class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column has-animation padding-2-percent el_spacing_0px inherit_tablet padding-4-percent_phone"
-                                data-border-radius="50px"
-                                data-padding-pos="top"
-                                data-has-bg-color="false"
-                                data-bg-color=""
-                                data-bg-opacity="1"
-                                data-animation="fade-in"
-                                data-delay="300"
-                              >
-                                <div class="vc_column-inner">
-                                  <div class="wpb_wrapper">
-                                    <div
-                                      class="nectar_video_player_self_hosted wpb_video_widget wpb_content_element vc_clearfix vc_video-aspect-ratio-43 vc_video-el-width-100 vc_video-align-center"
-                                      data-border-radius="none"
-                                      data-shadow="none"
-                                    >
-                                      <div class="wpb_wrapper">
-                                        <div class="wpb_video_wrapper">
-                                          <img src="./1winn.webp" alt="" style="margin-top: 25px;">
-                                         
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            id="fws_6675db70d0319"
-                            data-midnight=""
-                            data-column-margin="default"
-                            class="wpb_row vc_row-fluid vc_row inner_row vc_row-o-equal-height vc_row-flex vc_row-o-content-middle vc_hidden-lg vc_hidden-md vc_hidden-sm reverse_columns_column_phone"
-                            style=""
-                          >
-                            <div class="row-bg-wrap">
-                              <div class="row-bg"></div>
-                            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <div class="row_col_wrap_12_inner col span_12 left">
-                              <!-- <div
-                                class="vc_col-sm-6 hero wpb_column column_container vc_column_container col child_column has-animation force-phone-text-align-center left_padding_phone_0px top_padding_phone_0px right_padding_desktop_10pct right_padding_phone_0px bottom_padding_desktop_5pct bottom_padding_phone_0px"
-                                data-padding-pos="all"
-                                data-has-bg-color="false"
-                                data-bg-color=""
-                                data-bg-opacity="1"
-                                data-animation="slight-fade-in-from-bottom"
-                                data-delay="0"
-                              >
-                                <div class="vc_column-inner">
-                                  <div class="wpb_wrapper">
-
-
-                                    <div
-                                    class="nectar-cta cta_hero hover_color_003bce text_hover_color_ffffff border_color_003bce border_thickness_2px border_radius_165px alignment_tablet_default alignment_phone_default display_tablet_inherit display_phone_inherit font_size_phone_14px"
-                                    data-color="default"
-                                    data-using-bg="false"
-                                    data-style="arrow-animation"
-                                    data-display="block"
-                                    data-alignment="left"
-                                    data-text-color="custom"
-                                    style="margin-top: 15px"
-                                  >
-                                    <h6 style="color: #003bce">
-                                      <span
-                                        class="link_wrap"
-                                        style="
-                                          padding-top: 15px;
-                                          padding-right: 25px;
-                                          padding-bottom: 15px;
-                                          padding-left: 25px;
-                                        "
-                                        ><a
-                                          class="link_text"
-                                          role="button"
-                                          href="./become/affiliate.html"
-                                          ><span class="text"
-                                            >Become An Affiliate</span
-                                          ><svg
-                                            class="next-arrow"
-                                            aria-hidden="true"
-                                            width="20px"
-                                            height="25px"
-                                            viewBox="0 0 50 80"
-                                            xml:space="preserve"
-                                          >
-                                            <polyline
-                                              stroke="#ffffff"
-                                              stroke-width="9"
-                                              fill="none"
-                                              stroke-linecap="round"
-                                              stroke-linejoin="round"
-                                              points="0, 0 45, 40 0, 80"
-                                            />
-                                          </svg>
-                                          <span
-                                            class="line"
-                                            style="background-color: #003bce"
-                                          ></span> </a
-                                      ></span>
-                                    </h6>
-                                  </div>
-
-                                 
-
-                                 
-                                  </div>
-                                </div>
-                              </div> -->
-
-                              <!-- <img src="./blue box.svg" alt=""> -->
-
-                              <div style="margin-top: -15vh !important;"
-                                class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column has-animation no-extra-padding force-phone-text-align-center el_spacing_0px inherit_tablet padding-4-percent_phone"
-                                data-border-radius="50px"
-                                data-padding-pos="top"
-                                data-has-bg-color="false"
-                                data-bg-color=""
-                                data-bg-opacity="1"
-                                data-animation="fade-in"
-                                data-delay="400"
-                              >
-                                <div class="vc_column-inner">
-                                  <div class="wpb_wrapper">
                                     <div
                                       class="divider-wrap"
                                       data-alignment="default"
@@ -3148,237 +2929,551 @@
                                         class="divider"
                                       ></div>
                                     </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div
+                                class="vc_col-sm-2 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone"
+                                data-padding-pos="all"
+                                data-has-bg-color="false"
+                                data-bg-color=""
+                                data-bg-opacity="1"
+                                data-animation=""
+                                data-delay="0"
+                              >
+                                <div class="vc_column-inner">
+                                  <div class="wpb_wrapper"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <br />
+                          <br />
+
+                          <div
+                            id="fws_668b4f8dafb62"
+                            data-column-margin="30px"
+                            data-midnight="dark"
+                            class="wpb_row vc_row-fluid vc_row full-width-section vc_row-o-equal-height vc_row-flex vc_row-o-content-top bottom_padding_phone_0px bottom_margin_phone_0px"
+                            style="padding-top: 0px; padding-bottom: 30px"
+                          >
+                            <div
+                              class="row-bg-wrap"
+                              data-bg-animation="none"
+                              data-bg-animation-delay=""
+                              data-bg-overlay="false"
+                            >
+                              <div class="inner-wrap row-bg-layer">
+                                <div
+                                  class="row-bg viewport-desktop"
+                                  style=""
+                                ></div>
+                              </div>
+                            </div>
+                            <div class="row_col_wrap_12 col span_12 dark left">
+                              <style>
+                                #whatsappLink:hover {
+                                  background-color: #30bef6a4;
+                                }
+                                #whatsappLinkk:hover {
+                                  background-color: #30bef6a4;
+                                }
+                                #whatsappLinkkk:hover {
+                                  background-color: #30bef6a4;
+                                }
+                              </style>
+                              <div
+                                style="margin-top: 30px"
+                                class="vc_col-sm-4 wpb_column column_container vc_column_container col has-animation padding-3-percent top_margin_phone_0px inherit_tablet padding-3-percent_phone"
+                                data-using-bg="true"
+                                data-border-radius="20px"
+                                data-padding-pos="all"
+                                data-has-bg-color="true"
+                                data-bg-color="#f1f3fc"
+                                data-bg-opacity="1"
+                                data-animation="slight-fade-in-from-bottom"
+                                data-delay="0"
+                              >
+                                <div class="vc_column-inner" id="whatsappLinkk">
+                                  <div
+                                    class="column-bg-overlay-wrap column-bg-layer"
+                                    data-bg-animation="none"
+                                  >
                                     <div
-                                      class="nectar-split-heading"
-                                      data-align="default"
+                                      class="column-bg-overlay"
+                                      style="
+                                        opacity: 1;
+                                        background-color: #f1f3fc;
+                                      "
+                                    ></div>
+                                  </div>
+                                  <div class="wpb_wrapper">
+                                    <div
+                                      class="img-with-aniamtion-wrap center margin_right_phone_0px margin_left_phone_0px"
+                                      data-max-width="150%"
+                                      data-max-width-mobile="default"
+                                      data-shadow="none"
+                                      data-animation="none"
+                                    >
+                                      <div class="inner">
+                                        <div class="hover-wrap">
+                                          <div class="hover-wrap-inner">
+                                            <img
+                                              decoding="async"
+                                              class="img-with-animation tint-accent skip-lazy"
+                                              data-delay="0"
+                                              height="1"
+                                              width="1"
+                                              data-animation="none"
+                                              src="./image/paripesa-affiliates-logo.png"
+                                              alt=""
+                                              style="width: 90px"
+                                            />
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="nectar-split-heading bold-aspect"
+                                      data-align="center"
                                       data-m-align="inherit"
-                                      data-text-effect="default"
-                                      data-animation-type="line-reveal-by-space"
+                                      
+                                      
                                       data-animation-delay="0"
                                       data-animation-offset=""
                                       data-m-rm-animation=""
                                       data-stagger="true"
                                       data-custom-font-size="false"
                                     >
-                                      <h1>
-                                        Maximise your Profits with best Partners
-                                      </h1>
+                                      <h4
+                                        style="
+                                          color: #003bce;
+                                          text-align: center;
+                                        "
+                                      >
+                                        Earn a 500% Bonus with Our Affiliate
+                                        Link on <b>Paripulse! </b>
+                                      </h4>
                                     </div>
                                     <div
-                                      class="nectar-gradient-text"
-                                      data-direction="diagonal"
-                                      data-color="extra-color-gradient-1"
-                                      style=""
+                                      class="wpb_text_column wpb_content_element vc_custom_1716581239134"
                                     >
-                                      <h1>We Are One Affiliate</h1>
-                                    </div>
-                                    <!-- <div
-                                      class="divider-wrap"
-                                      data-alignment="default"
-                                    >
-                                      <div
-                                        style="height: 40px"
-                                        class="divider"
-                                      ></div>
-                                    </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-                                    <div class="nectar_video_player_self_hosted wpb_video_widget wpb_content_element vc_clearfix vc_video-aspect-ratio-43 vc_video-el-width-150 vc_video-align-center" data-border-radius="none" data-shadow="none">
                                       <div class="wpb_wrapper">
-                                        <div class="wpb_video_wrapper">
-                                          <div id="carousel" style="max-width: 1280px; position: relative; margin: auto; overflow: hidden;">
-                                            <div class="slide-container" style="display: flex; transition: transform 0.8s ease-in-out; gap: 2%;">
-                                              
-                                             
-                                              <div class="mySlide" style="min-width: calc(100% / 2.2 - 2%); box-sizing: border-box;">
-                                                <img src="./megapari blue.svg" alt="Slide 1" style="width: 100%; height: auto;">
-                                              </div>
-                                    
-                                              
-                                              <div class="mySlide" style="min-width: calc(100% / 2.2 - 2%); box-sizing: border-box;">
-                                                <img src="./megapari  white.svg" alt="Slide 2" style="width: 100%; height: auto;">
-                                              </div>
-                                    
-                                              
-                                              <div class="mySlide" style="min-width: calc(100% / 2.2 - 2%); box-sizing: border-box;">
-                                                <img src="./megapari blue.svg" alt="Slide 3" style="width: 100%; height: auto;">
-                                              </div>
-                                    
-                                              
-                                              <div class="mySlide" style="min-width: calc(100% / 2.2 - 2%); box-sizing: border-box;">
-                                                <img src="./megapari  white.svg" alt="Slide 4" style="width: 100%; height: auto;">
-                                              </div>
+                                        <p
+                                          style="
+                                            text-align: center;
+                                            color: black;
+                                          "
+                                        >
+                                          Join our affiliate program for a 500%
+                                          bonus on every successful referral
+                                          through your link on Paripulse. Boost
+                                          your earnings while helping us expand
+                                          our reach. Start promoting today!
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
 
-                                              <div class="mySlide" style="min-width: calc(100% / 2.2 - 2%); box-sizing: border-box;">
-                                                <img src="./megapari blue.svg" alt="Slide 1" style="width: 100%; height: auto;">
-                                              </div>
-                                    
-                                              
-                                              <div class="mySlide" style="min-width: calc(100% / 2.2 - 2%); box-sizing: border-box;">
-                                                <img src="./megapari  white.svg" alt="Slide 2" style="width: 100%; height: auto;">
-                                              </div>
-                                    
-                                              
-                                              <div class="mySlide" style="min-width: calc(100% / 2.2 - 2%); box-sizing: border-box;">
-                                                <img src="./megapari blue.svg" alt="Slide 3" style="width: 100%; height: auto;">
-                                              </div>
-                                    
-                                              
-                                              <div class="mySlide" style="min-width: calc(100% / 2.2 - 2%); box-sizing: border-box;">
-                                                <img src="./megapari  white.svg" alt="Slide 4" style="width: 100%; height: auto;">
-                                              </div>
-
-                                              <div class="mySlide" style="min-width: calc(100% / 2.2 - 2%); box-sizing: border-box;">
-                                                <img src="./megapari blue.svg" alt="Slide 1" style="width: 100%; height: auto;">
-                                              </div>
-                                    
-                                              
-                                              <div class="mySlide" style="min-width: calc(100% / 2.2 - 2%); box-sizing: border-box;">
-                                                <img src="./megapari  white.svg" alt="Slide 2" style="width: 100%; height: auto;">
-                                              </div>
-                                    
-                                              
-                                              <div class="mySlide" style="min-width: calc(100% / 2.2 - 2%); box-sizing: border-box;">
-                                                <img src="./megapari blue.svg" alt="Slide 3" style="width: 100%; height: auto;">
-                                              </div>
-                                    
-                                              
-                                              <div class="mySlide" style="min-width: calc(100% / 2.2 - 2%); box-sizing: border-box;">
-                                                <img src="./megapari  white.svg" alt="Slide 4" style="width: 100%; height: auto;">
-                                              </div>
-                                    
-                                            </div>
+                              <div
+                                style="margin-top: 30px"
+                                class="vc_col-sm-4 wpb_column column_container vc_column_container col has-animation padding-3-percent top_margin_phone_0px inherit_tablet padding-3-percent_phone"
+                                data-using-bg="true"
+                                data-border-radius="20px"
+                                data-padding-pos="all"
+                                data-has-bg-color="true"
+                                data-bg-color="#f1f3fc"
+                                data-bg-opacity="1"
+                                data-animation="slight-fade-in-from-bottom"
+                                data-delay="100"
+                              >
+                                <div
+                                  class="vc_column-inner"
+                                  id="whatsappLinkkk"
+                                >
+                                  <div
+                                    class="column-bg-overlay-wrap column-bg-layer"
+                                    data-bg-animation="none"
+                                  >
+                                    <div
+                                      class="column-bg-overlay"
+                                      style="
+                                        opacity: 1;
+                                        background-color: #f1f3fc;
+                                      "
+                                    ></div>
+                                  </div>
+                                  <div class="wpb_wrapper">
+                                    <div
+                                      class="img-with-aniamtion-wrap center margin_right_phone_0px margin_left_phone_0px"
+                                      data-max-width="150%"
+                                      data-max-width-mobile="default"
+                                      data-shadow="none"
+                                      data-animation="none"
+                                    >
+                                      <div class="inner">
+                                        <div class="hover-wrap">
+                                          <div class="hover-wrap-inner">
+                                            <img
+                                              decoding="async"
+                                              class="img-with-animation tint-accent skip-lazy"
+                                              data-delay="0"
+                                              height="1"
+                                              width="1"
+                                              data-animation="none"
+                                              src="./image/paripesa-affiliates-logo.png"
+                                              alt=""
+                                              style="width: 90px"
+                                            />
                                           </div>
-                                    
-                                          <script>
-                                            let slideIndex = 1; 
-                                            const slides = document.querySelectorAll('.mySlide');
-                                            const totalSlides = slides.length;
-                                            const slideContainer = document.querySelector('.slide-container');
-                                            const carousel = document.getElementById('carousel');
-                                            let startX, isDragging = false, currentTranslate = 0, prevTranslate = 0;
-                                    
-                                            function updateSlides() {
-                                              slides.forEach((slide, index) => {
-                                                slide.style.transform = 'scale(1)';  
-                                                slide.style.opacity = '0.15';        
-                                              });
-                                    
-                                             
-                                              slides[slideIndex].style.transform = 'scale(1)';  
-                                              slides[slideIndex].style.opacity = '1';          
-                                            }
-                                    
-                                            function startDrag(e) {
-                                              isDragging = true;
-                                              startX = e.type === 'touchstart' ? e.touches[0].clientX : e.clientX;
-                                              prevTranslate = currentTranslate;
-                                              slideContainer.style.transition = 'none'; 
-                                            }
-                                    
-                                            function dragMove(e) {
-                                              if (!isDragging) return;
-                                              const x = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
-                                              const distance = x - startX;
-                                              currentTranslate = prevTranslate + distance;
-                                              slideContainer.style.transform = `translateX(${currentTranslate}px)`;
-                                            }
-                                    
-                                            function endDrag(e) {
-                                              if (!isDragging) return;
-                                              isDragging = false;
-                                              const x = e.type === 'touchend' ? e.changedTouches[0].clientX : e.clientX;
-                                              const distance = x - startX;
-                                              if (distance > 50) { 
-                                                slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
-                                              } else if (distance < -50) { 
-                                                slideIndex = (slideIndex + 1) % totalSlides;
-                                              }
-                                              updateSlides();
-                                              currentTranslate = -slideIndex * (carousel.offsetWidth / 2.2); 
-                                              slideContainer.style.transition = 'transform 0.8s ease-in-out';
-                                              slideContainer.style.transform = `translateX(${currentTranslate}px)`;
-                                            }
-                                    
-                                            carousel.addEventListener('mousedown', startDrag);
-                                            carousel.addEventListener('mousemove', dragMove);
-                                            carousel.addEventListener('mouseup', endDrag);
-                                            carousel.addEventListener('mouseleave', endDrag);
-                                            carousel.addEventListener('touchstart', startDrag);
-                                            carousel.addEventListener('touchmove', dragMove);
-                                            carousel.addEventListener('touchend', endDrag);
-                                    
-                                            updateSlides(); 
-                                            currentTranslate = -slideIndex * (carousel.offsetWidth / 2.2);  
-                                            slideContainer.style.transform = `translateX(${currentTranslate}px)`;
-                                          </script>
-                                    
                                         </div>
                                       </div>
-                                    </div> -->
-                                    
-                                    <style>
-                                      .mySlide img {
-                                        width: 100%;
-                                        height: auto; 
-                                        object-fit: contain;
-                                      }
-                                    
-                                      .mySlide {
-                                        transition: transform 0.8s ease, opacity 0.8s ease;
-                                      }
-                                    
-                                      #carousel {
-                                        overflow: hidden; 
-                                      }
-                                    
-                                      .slide-container {
-                                        display: flex;
-                                        transition: transform 0.8s ease-in-out;
-                                        gap: 2%; 
-                                      }
-                                    </style>
-                                    
+                                    </div>
+                                    <div
+                                      class="nectar-split-heading bold-aspect"
+                                      data-align="center"
+                                      data-m-align="inherit"
+                                     
+                                      data-animation-delay="0"
+                                      data-animation-offset=""
+                                      data-m-rm-animation=""
+                                      data-stagger="true"
+                                      data-custom-font-size="false"
+                                    >
+                                      <h4
+                                        style="
+                                          color: #003bce;
+                                          text-align: center;
+                                        "
+                                      >
+                                        Earn a 500% Bonus with Our Affiliate
+                                        Link on <b>Paripulse! </b>
+                                      </h4>
+                                    </div>
+                                    <div
+                                      class="wpb_text_column wpb_content_element vc_custom_1716581239134"
+                                    >
+                                      <div class="wpb_wrapper">
+                                        <p
+                                          style="
+                                            text-align: center;
+                                            color: black;
+                                          "
+                                        >
+                                          Join our affiliate program for a 500%
+                                          bonus on every successful referral
+                                          through your link on Paripulse. Boost
+                                          your earnings while helping us expand
+                                          our reach. Start promoting today!
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <style>
+                                @media only screen and (max-width: 767px) {
+                                  #dingi {
+                                    margin-top: -45px !important;
+                                  }
+                                }
+                              </style>
 
+                              <div
+                                style="margin-top: 30px"
+                                class="vc_col-sm-4 wpb_column column_container vc_column_container col has-animation padding-3-percent top_margin_phone_0px bottom_margin_phone_-30px inherit_tablet padding-3-percent_phone"
+                                data-using-bg="true"
+                                data-border-radius="20px"
+                                data-padding-pos="all"
+                                data-has-bg-color="true"
+                                data-bg-color="#f1f3fc"
+                                data-bg-opacity="1"
+                                data-animation="slight-fade-in-from-bottom"
+                                data-delay="200"
+                              >
+                                <div
+                                  class="vc_column-inner"
+                                  id="whatsappLinkkk"
+                                >
+                                  <div
+                                    class="column-bg-overlay-wrap column-bg-layer"
+                                    data-bg-animation="none"
+                                  >
+                                    <div
+                                      class="column-bg-overlay"
+                                      style="
+                                        opacity: 1;
+                                        background-color: #f1f3fc;
+                                      "
+                                    ></div>
+                                  </div>
+                                  <div class="wpb_wrapper">
+                                    <div
+                                      class="img-with-aniamtion-wrap center margin_right_phone_0px margin_left_phone_0px"
+                                      data-max-width="150%"
+                                      data-max-width-mobile="default"
+                                      data-shadow="none"
+                                      data-animation="none"
+                                    >
+                                      <div class="inner">
+                                        <div class="hover-wrap">
+                                          <div class="hover-wrap-inner">
+                                            <img
+                                              decoding="async"
+                                              class="img-with-animation tint-accent skip-lazy"
+                                              data-delay="0"
+                                              height="1"
+                                              width="1"
+                                              data-animation="none"
+                                              src="./image/paripesa-affiliates-logo.png"
+                                              alt=""
+                                              style="width: 90px"
+                                            />
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="nectar-split-heading bold-aspect"
+                                      data-align="center"
+                                      data-m-align="inherit"
+                                      
+                                      data-animation-delay="0"
+                                      data-animation-offset=""
+                                      data-m-rm-animation=""
+                                      data-stagger="true"
+                                      data-custom-font-size="false"
+                                    >
+                                      <h4
+                                        style="
+                                          color: #003bce;
+                                          text-align: center;
+                                        "
+                                      >
+                                        Earn a 500% Bonus with Our Affiliate
+                                        Link on <b>Paripulse! </b>
+                                      </h4>
+                                    </div>
+                                    <div
+                                      class="wpb_text_column wpb_content_element vc_custom_1716581239134"
+                                    >
+                                      <div class="wpb_wrapper">
+                                        <p
+                                          style="
+                                            text-align: center;
+                                            color: black;
+                                          "
+                                        >
+                                          Join our affiliate program for a 500%
+                                          bonus on every successful referral
+                                          through your link on Paripulse. Boost
+                                          your earnings while helping us expand
+                                          our reach. Start promoting today!
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
 
+                              <br />
+                              <br />
+                              <div
+                                style="margin-top: 30px"
+                                class="vc_col-sm-4 wpb_column column_container vc_column_container col has-animation padding-3-percent top_margin_phone_0px bottom_margin_phone_-30px inherit_tablet padding-3-percent_phone"
+                                data-using-bg="true"
+                                data-border-radius="20px"
+                                data-padding-pos="all"
+                                data-has-bg-color="true"
+                                data-bg-color="#f1f3fc"
+                                data-bg-opacity="1"
+                                data-animation="slight-fade-in-from-bottom"
+                                data-delay="200"
+                              >
+                                <div
+                                  class="vc_column-inner"
+                                  id="whatsappLinkkk"
+                                >
+                                  <div
+                                    class="column-bg-overlay-wrap column-bg-layer"
+                                    data-bg-animation="none"
+                                  >
+                                    <div
+                                      class="column-bg-overlay"
+                                      style="
+                                        opacity: 1;
+                                        background-color: #f1f3fc;
+                                      "
+                                    ></div>
+                                  </div>
+                                  <div class="wpb_wrapper">
+                                    <div
+                                      class="img-with-aniamtion-wrap center margin_right_phone_0px margin_left_phone_0px"
+                                      data-max-width="150%"
+                                      data-max-width-mobile="default"
+                                      data-shadow="none"
+                                      data-animation="none"
+                                    >
+                                      <div class="inner">
+                                        <div class="hover-wrap">
+                                          <div class="hover-wrap-inner">
+                                            <img
+                                              decoding="async"
+                                              class="img-with-animation tint-accent skip-lazy"
+                                              data-delay="0"
+                                              height="1"
+                                              width="1"
+                                              data-animation="none"
+                                              src="./image/paripesa-affiliates-logo.png"
+                                              alt=""
+                                              style="width: 90px"
+                                            />
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="nectar-split-heading bold-aspect"
+                                      data-align="center"
+                                      data-m-align="inherit"
+                                     
+                                      
+                                      data-animation-offset=""
+                                      data-m-rm-animation=""
+                                      data-stagger="true"
+                                      data-custom-font-size="false"
+                                    >
+                                      <h4
+                                        style="
+                                          color: #003bce;
+                                          text-align: center;
+                                        "
+                                      >
+                                        Earn a 500% Bonus with Our Affiliate
+                                        Link on <b>Paripulse! </b>
+                                      </h4>
+                                    </div>
+                                    <div
+                                      class="wpb_text_column wpb_content_element vc_custom_1716581239134"
+                                    >
+                                      <div class="wpb_wrapper">
+                                        <p
+                                          style="
+                                            text-align: center;
+                                            color: black;
+                                          "
+                                        >
+                                          Join our affiliate program for a 500%
+                                          bonus on every successful referral
+                                          through your link on Paripulse. Boost
+                                          your earnings while helping us expand
+                                          our reach. Start promoting today!
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
 
+                              <br />
+                              <br />
 
-
-
-
-
-
-
-                                    
-
-
-
+                              <div
+                                style="margin-top: 30px"
+                                class="vc_col-sm-4 wpb_column column_container vc_column_container col has-animation padding-3-percent top_margin_phone_0px bottom_margin_phone_-30px inherit_tablet padding-3-percent_phone"
+                                data-using-bg="true"
+                                data-border-radius="20px"
+                                data-padding-pos="all"
+                                data-has-bg-color="true"
+                                data-bg-color="#f1f3fc"
+                                data-bg-opacity="1"
+                                data-animation="slight-fade-in-from-bottom"
+                                data-delay="200"
+                              >
+                                <div
+                                  class="vc_column-inner"
+                                  id="whatsappLinkkk"
+                                >
+                                  <div
+                                    class="column-bg-overlay-wrap column-bg-layer"
+                                    data-bg-animation="none"
+                                  >
+                                    <div
+                                      class="column-bg-overlay"
+                                      style="
+                                        opacity: 1;
+                                        background-color: #f1f3fc;
+                                      "
+                                    ></div>
+                                  </div>
+                                  <div class="wpb_wrapper">
+                                    <div
+                                      class="img-with-aniamtion-wrap center margin_right_phone_0px margin_left_phone_0px"
+                                      data-max-width="150%"
+                                      data-max-width-mobile="default"
+                                      data-shadow="none"
+                                      data-animation="none"
+                                    >
+                                      <div class="inner">
+                                        <div class="hover-wrap">
+                                          <div class="hover-wrap-inner">
+                                            <img
+                                              decoding="async"
+                                              class="img-with-animation tint-accent skip-lazy"
+                                              data-delay="0"
+                                              height="1"
+                                              width="1"
+                                              data-animation="none"
+                                              src="./image/paripesa-affiliates-logo.png"
+                                              alt=""
+                                              style="width: 90px"
+                                            />
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="nectar-split-heading bold-aspect"
+                                      data-align="center"
+                                      data-m-align="inherit"
+                                      
+                                      data-animation-offset=""
+                                      data-m-rm-animation=""
+                                      data-stagger="true"
+                                      data-custom-font-size="false"
+                                    >
+                                      <h4
+                                        style="
+                                          color: #003bce;
+                                          text-align: center;
+                                        "
+                                      >
+                                        Earn a 500% Bonus with Our Affiliate
+                                        Link on <b>Paripulse! </b>
+                                      </h4>
+                                    </div>
+                                    <div
+                                      class="wpb_text_column wpb_content_element vc_custom_1716581239134"
+                                    >
+                                      <div class="wpb_wrapper">
+                                        <p
+                                          style="
+                                            text-align: center;
+                                            color: black;
+                                          "
+                                        >
+                                          Join our affiliate program for a 500%
+                                          bonus on every successful referral
+                                          through your link on Paripulse. Boost
+                                          your earnings while helping us expand
+                                          our reach. Start promoting today!
+                                        </p>
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -3387,501 +3482,11 @@
                         </div>
                       </div>
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    
-                    <!-- <style>
-                    
-
-                      @media only screen and (max-width: 767px) {
-        #onlypc {
-            display: none;
-        }
-        #onlyphone{
-          display: block !important;
-        }
-    }
-                    </style>
-                    
-                    <img id='onlypc' src="./PC View.svg" alt="" style="margin-top: -20vh; margin-left: 3vw; z-index: 9999;">
-
-
-                    <div style="
-    background-image: url('./MOBILE\ View\ \(1\).svg'); 
-    background-size: cover; 
-    background-position: center; 
-    padding: 20px; 
-    border-radius: 15px; 
-    max-width: 350px; 
-    width: 100%; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    ">
-    
-    <h1 style="color: white; font-size: 18px; margin: 0 0 10px; margin-top: 8px;">
-      Exclusive &nbsp;&nbsp; Deals for India 
-  </h1>
-  
-    <p style="color: white; font-size: 10px; margin: 0 0 0px;">check below the deals that might interest you</p>
-
-                  <style>
-                    #fontyy{
-                      font-family: "Varela Round", sans-serif !important;
-                    }
-                  </style>
-   <div style="display: flex; align-items: center; margin-bottom: 10px;">
-    <img src="./image/paripulse-0x0 (1).png" alt="Telegram" style="width: 40px; height: 40px; margin-right: 10px; border-radius: 8px;">
-    <span style="flex: 1; color: white; font-size: 9px; font-weight: bold; border-left: 2px solid white; padding-left: 5px;" id="fontyy">
-        Get a <span style="color: #FFD700; font-size: 14px; font-weight: bold;">40$</span> CPA and 50-70% REV Deal on MegaPari
-    </span>
-    <button style="background-color: white; color: #007bff; border: none; border-radius: 20px; padding: 5px 15px; cursor: pointer;">Get Now</button>
-</div>
-
-
-    <hr style="border: 1px solid white; width: 100%; margin: 10px 0;">
-
-    <div style="display: flex; align-items: center; margin-bottom: 10px;">
-      <img src="./image/paripulse-0x0 (1).png" alt="Telegram" style="width: 40px; height: 40px; margin-right: 10px; border-radius: 8px;">
-      <span style="flex: 1; color: white; font-size: 9px; font-weight: bold; border-left: 2px solid white; padding-left: 5px;" id="fontyy">
-          Get a <span style="color: #FFD700; font-size: 14px; font-weight: bold;">40$</span> CPA and 50-70% REV Deal on MegaPari
-      </span>
-      <button style="background-color: white; color: #007bff; border: none; border-radius: 20px; padding: 5px 15px; cursor: pointer;">Get Now</button>
-  </div>
-  
-
-  <hr style="border: 1px solid white; width: 100%; margin: 10px 0;">
-
-  <div style="display: flex; align-items: center; margin-bottom: 10px;">
-    <img src="./image/paripulse-0x0 (1).png" alt="Telegram" style="width: 40px; height: 40px; margin-right: 10px; border-radius: 8px;">
-    <span style="flex: 1; color: white; font-size: 9px; font-weight: bold; border-left: 2px solid white; padding-left: 5px;" id="fontyy">
-        Get a <span style="color: #FFD700; font-size: 14px; font-weight: bold;">40$</span> CPA and 50-70% REV Deal on MegaPari
-    </span>
-    <button style="background-color: white; color: #007bff; border: none; border-radius: 20px; padding: 5px 15px; cursor: pointer;">Get Now</button>
-</div>
-
-
-<hr style="border: 1px solid white; width: 100%; margin: 10px 0;">
-
-<div style="display: flex; align-items: center; margin-bottom: 10px;">
-  <img src="./image/paripulse-0x0 (1).png" alt="Telegram" style="width: 40px; height: 40px; margin-right: 10px; border-radius: 8px;">
-  <span style="flex: 1; color: white; font-size: 9px; font-weight: bold; border-left: 2px solid white; padding-left: 5px;" id="fontyy">
-      Get a <span style="color: #FFD700; font-size: 14px; font-weight: bold;">40$</span> CPA and 50-70% REV Deal on MegaPari
-  </span>
-  <button style="background-color: white; color: #007bff; border: none; border-radius: 20px; padding: 5px 15px; cursor: pointer;">Get Now</button>
-</div>
-
-
-<hr style="border: 1px solid white; width: 100%; margin: 10px 0;">
-
-<div style="display: flex; align-items: center; margin-bottom: 10px;">
-  <img src="./image/paripulse-0x0 (1).png" alt="Telegram" style="width: 40px; height: 40px; margin-right: 10px; border-radius: 8px;">
-  <span style="flex: 1; color: white; font-size: 9px; font-weight: bold; border-left: 2px solid white; padding-left: 5px;" id="fontyy">
-      Get a <span style="color: #FFD700; font-size: 14px; font-weight: bold;">40$</span> CPA and 50-70% REV Deal on MegaPari
-  </span>
-  <button style="background-color: white; color: #007bff; border: none; border-radius: 20px; padding: 5px 15px; cursor: pointer;">Get Now</button>
-</div>
-
-<hr style="border: 1px solid white; width: 100%; margin: 10px 0;">
-<div style="display: flex; align-items: center; margin-bottom: 10px;">
-  <img src="./image/paripulse-0x0 (1).png" alt="Telegram" style="width: 40px; height: 40px; margin-right: 10px; border-radius: 8px;">
-  <span style="flex: 1; color: white; font-size: 9px; font-weight: bold; border-left: 2px solid white; padding-left: 5px;" id="fontyy">
-      Get a <span style="color: #FFD700; font-size: 14px; font-weight: bold;">40$</span> CPA and 50-70% REV Deal on MegaPari
-  </span>
-  <button style="background-color: white; color: #007bff; border: none; border-radius: 20px; padding: 5px 15px; cursor: pointer;">Get Now</button>
-</div>
-
-<hr style="border: 1px solid white; width: 100%; margin: 10px 0;">
-<div style="display: flex; align-items: center; margin-bottom: 10px;">
-  <img src="./image/paripulse-0x0 (1).png" alt="Telegram" style="width: 40px; height: 40px; margin-right: 10px; border-radius: 8px;">
-  <span style="flex: 1; color: white; font-size: 9px; font-weight: bold; border-left: 2px solid white; padding-left: 5px;" id="fontyy">
-      Get a <span style="color: #FFD700; font-size: 14px; font-weight: bold;">40$</span> CPA and 50-70% REV Deal on MegaPari
-  </span>
-  <button style="background-color: white; color: #007bff; border: none; border-radius: 20px; padding: 5px 15px; cursor: pointer;">Get Now</button>
-</div>
-
-<hr style="border: 1px solid white; width: 100%; margin: 10px 0;">
-
-<div style="margin-left: 90px; color: white; animation: colorChange 1s infinite alternate;">
-  See More Deals >> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1/20
-</div>
-
-<style>
-  @keyframes colorChange {
-      0% {
-          color: white;
-      }
-      100% {
-          color: rgb(190, 215, 255);
-      }
-  }
-</style>
-
-</div>
-
-<script>
-    // Show the subscribe container only on mobile devices
-    if (window.innerWidth <= 600) {
-        document.querySelector('.subscribe-container').style.display = 'block';
-    }
-</script> -->
-
-
                   </div>
                 </div>
 
+                <div style="height: 10vh"></div>
 
-
-                <!-- <img src="./image/Group 48095552.svg" alt="" style="margin-top: -45px;"> -->
-                <!-- <img src="./blue box.svg" alt="" style="margin-top: -10vh; z-index: 99999;"> -->
-               
-
- 
-              
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
-
-
-
-
-
-
-             <div id="fws_66947135eff37" data-column-margin="default" data-midnight="dark" class="wpb_row vc_row-fluid vc_row has-global-section" style="padding-top: 0px; padding-bottom: 0px; margin-top: -22vh;">
-              <div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false">
-                <div class="inner-wrap row-bg-layer">
-                  <div class="row-bg viewport-desktop" style=""></div>
-                </div>
-              </div>
-              <div class="row_col_wrap_12 col span_12 dark left">
-                <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone" data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                  <div class="vc_column-inner">
-                    <div class="wpb_wrapper">
-                      <div style="margin-top: 0" id="fws_66947135f05bc" data-column-margin="30px" data-midnight="dark" class="wpb_row vc_row-fluid vc_row full-width-content vc_row-o-equal-height vc_row-flex vc_row-o-content-top right_padding_5vw left_padding_5vw first-section loaded">
-                        <div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false">
-                          <div class="inner-wrap row-bg-layer">
-                            <div class="row-bg viewport-desktop using-bg-color" style="
-                                background-color: rgba(0, 59, 206, 0.06);
-                              "></div>
-                          </div>
-                        </div>
-                        <div class="row_col_wrap_12 col span_12 dark left">
-                          <div class="vc_col-sm-2 wpb_column column_container vc_column_container col nectar-mask-reveal-bg nectar-mask-reveal-bg-left-dir nectar-mask-reveal-bg-straight-shape left_padding_desktop_2vw top_padding_desktop_5vw top_padding_phone_4vw right_padding_desktop_2vw bottom_padding_desktop_2vw bottom_padding_phone_4vw" data-border-radius="20px" data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                            <div class="vc_column-inner">
-                              <div class="wpb_wrapper"></div>
-                            </div>
-                          </div>
-
-                          <div class="vc_col-sm-8 ico-page hero wpb_column column_container vc_column_container col centered-text padding-4-percent force-desktop-text-align-center inherit_tablet padding-2-percent_phone" data-padding-pos="top" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                            <div class="vc_column-inner">
-                              <div class="wpb_wrapper">
-                                <div class="nectar-gradient-text" data-direction="diagonal" data-color="extra-color-gradient-1" style="">
-                                  <h2>Our Partners</h2>
-                                </div>
-
-                                <div class="divider-wrap" data-alignment="default">
-                                  <div style="height: 10px" class="divider"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="vc_col-sm-2 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone" data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                            <div class="vc_column-inner">
-                              <div class="wpb_wrapper"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <br>
-                      <br>
-
-                      <div id="fws_668b4f8dafb62" data-column-margin="30px" data-midnight="dark" class="wpb_row vc_row-fluid vc_row full-width-section vc_row-o-equal-height vc_row-flex vc_row-o-content-top bottom_padding_phone_0px bottom_margin_phone_0px" style="padding-top: 0px; padding-bottom: 30px">
-                        <div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false">
-                          <div class="inner-wrap row-bg-layer">
-                            <div class="row-bg viewport-desktop" style=""></div>
-                          </div>
-                        </div>
-                        <div class="row_col_wrap_12 col span_12 dark left">
-                          <style>
-                            #whatsappLink:hover {
-                              background-color: #30bef6a4;
-                            }
-                            #whatsappLinkk:hover {
-                              background-color: #30bef6a4;
-                            }
-                            #whatsappLinkkk:hover {
-                              background-color: #30bef6a4;
-                            }
-                          </style>
-                          <div style="margin-top: 30px" class="vc_col-sm-4 wpb_column column_container vc_column_container col has-animation padding-3-percent top_margin_phone_0px inherit_tablet padding-3-percent_phone" data-using-bg="true" data-border-radius="20px" data-padding-pos="all" data-has-bg-color="true" data-bg-color="#f1f3fc" data-bg-opacity="1" data-animation="slight-fade-in-from-bottom" data-delay="0">
-                            <div class="vc_column-inner" id="whatsappLinkk">
-                              <div class="column-bg-overlay-wrap column-bg-layer" data-bg-animation="none">
-                                <div class="column-bg-overlay" style="
-                                    opacity: 1;
-                                    background-color: #f1f3fc;
-                                  "></div>
-                              </div>
-                              <div class="wpb_wrapper">
-                                <div class="img-with-aniamtion-wrap center margin_right_phone_0px margin_left_phone_0px" data-max-width="150%" data-max-width-mobile="default" data-shadow="none" data-animation="none">
-                                  <div class="inner">
-                                    <div class="hover-wrap">
-                                      <div class="hover-wrap-inner">
-                                        <img decoding="async" class="img-with-animation tint-accent skip-lazy" data-delay="0" height="1" width="1" data-animation="none" src="./image/paripesa-affiliates-logo.png" alt="" style="width: 90px">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="nectar-split-heading bold-aspect" data-align="center" data-m-align="inherit" data-text-effect="letter-reveal-top" data-animation-type="line-reveal-by-space" data-animation-delay="0" data-animation-offset="" data-m-rm-animation="" data-stagger="true" data-custom-font-size="false">
-                                  <h4 style="color: #003bce; text-align: center;">Earn a 500% Bonus with Our Affiliate Link on <b>Paripulse! </b></h4>
-                                </div>
-                                <div class="wpb_text_column wpb_content_element vc_custom_1716581239134">
-                                  <div class="wpb_wrapper">
-                                     <p style="text-align: center; color: black;">
-                                      Join our affiliate program for a 500% bonus on every successful referral through your link on Paripulse. Boost your earnings while helping us expand our reach. Start promoting today!
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div style="margin-top: 30px" class="vc_col-sm-4 wpb_column column_container vc_column_container col has-animation padding-3-percent top_margin_phone_0px inherit_tablet padding-3-percent_phone" data-using-bg="true" data-border-radius="20px" data-padding-pos="all" data-has-bg-color="true" data-bg-color="#f1f3fc" data-bg-opacity="1" data-animation="slight-fade-in-from-bottom" data-delay="100">
-                            <div class="vc_column-inner" id="whatsappLinkkk">
-                              <div class="column-bg-overlay-wrap column-bg-layer" data-bg-animation="none">
-                                <div class="column-bg-overlay" style="
-                                    opacity: 1;
-                                    background-color: #f1f3fc;
-                                  "></div>
-                              </div>
-                              <div class="wpb_wrapper">
-                                <div class="img-with-aniamtion-wrap center margin_right_phone_0px margin_left_phone_0px" data-max-width="150%" data-max-width-mobile="default" data-shadow="none" data-animation="none">
-                                  <div class="inner">
-                                    <div class="hover-wrap">
-                                      <div class="hover-wrap-inner">
-                                        <img decoding="async" class="img-with-animation tint-accent skip-lazy" data-delay="0" height="1" width="1" data-animation="none" src="./image/paripesa-affiliates-logo.png" alt="" style="width: 90px">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="nectar-split-heading bold-aspect" data-align="center" data-m-align="inherit" data-text-effect="letter-reveal-top" data-animation-type="line-reveal-by-space" data-animation-delay="0" data-animation-offset="" data-m-rm-animation="" data-stagger="true" data-custom-font-size="false">
-                                  <h4 style="color: #003bce; text-align: center;">Earn a 500% Bonus with Our Affiliate Link on <b>Paripulse! </b></h4>
-                                </div>
-                                <div class="wpb_text_column wpb_content_element vc_custom_1716581239134">
-                                  <div class="wpb_wrapper">
-                                     <p style="text-align: center; color: black;">
-                                      Join our affiliate program for a 500% bonus on every successful referral through your link on Paripulse. Boost your earnings while helping us expand our reach. Start promoting today!
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-<style>
-@media only screen and (max-width: 767px) {
-#dingi {
-margin-top: -45px !important;
-}
-}
-
-</style>
-                        
-
-                          <div style="margin-top: 30px" class="vc_col-sm-4 wpb_column column_container vc_column_container col has-animation padding-3-percent top_margin_phone_0px bottom_margin_phone_-30px inherit_tablet padding-3-percent_phone" data-using-bg="true" data-border-radius="20px" data-padding-pos="all" data-has-bg-color="true" data-bg-color="#f1f3fc" data-bg-opacity="1" data-animation="slight-fade-in-from-bottom" data-delay="200">
-                            <div class="vc_column-inner" id="whatsappLinkkk">
-                              <div class="column-bg-overlay-wrap column-bg-layer" data-bg-animation="none">
-                                <div class="column-bg-overlay" style="
-                                    opacity: 1;
-                                    background-color: #f1f3fc;
-                                  "></div>
-                              </div>
-                              <div class="wpb_wrapper">
-                                <div class="img-with-aniamtion-wrap center margin_right_phone_0px margin_left_phone_0px" data-max-width="150%" data-max-width-mobile="default" data-shadow="none" data-animation="none">
-                                  <div class="inner">
-                                    <div class="hover-wrap">
-                                      <div class="hover-wrap-inner">
-                                        <img decoding="async" class="img-with-animation tint-accent skip-lazy" data-delay="0" height="1" width="1" data-animation="none" src="./image/paripesa-affiliates-logo.png" alt="" style="width: 90px">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="nectar-split-heading bold-aspect" data-align="center" data-m-align="inherit" data-text-effect="letter-reveal-top" data-animation-type="line-reveal-by-space" data-animation-delay="0" data-animation-offset="" data-m-rm-animation="" data-stagger="true" data-custom-font-size="false">
-                                  <h4 style="color: #003bce; text-align: center;">Earn a 500% Bonus with Our Affiliate Link on <b>Paripulse! </b></h4>
-                                </div>
-                                <div class="wpb_text_column wpb_content_element vc_custom_1716581239134">
-                                  <div class="wpb_wrapper">
-                                     <p style="text-align: center; color: black;">
-                                      Join our affiliate program for a 500% bonus on every successful referral through your link on Paripulse. Boost your earnings while helping us expand our reach. Start promoting today!
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <br>
-                          <br>
-                          <div style="margin-top: 30px" class="vc_col-sm-4 wpb_column column_container vc_column_container col has-animation padding-3-percent top_margin_phone_0px bottom_margin_phone_-30px inherit_tablet padding-3-percent_phone" data-using-bg="true" data-border-radius="20px" data-padding-pos="all" data-has-bg-color="true" data-bg-color="#f1f3fc" data-bg-opacity="1" data-animation="slight-fade-in-from-bottom" data-delay="200">
-                            <div class="vc_column-inner" id="whatsappLinkkk">
-                              <div class="column-bg-overlay-wrap column-bg-layer" data-bg-animation="none">
-                                <div class="column-bg-overlay" style="
-                                    opacity: 1;
-                                    background-color: #f1f3fc;
-                                  "></div>
-                              </div>
-                              <div class="wpb_wrapper">
-                                <div class="img-with-aniamtion-wrap center margin_right_phone_0px margin_left_phone_0px" data-max-width="150%" data-max-width-mobile="default" data-shadow="none" data-animation="none">
-                                  <div class="inner">
-                                    <div class="hover-wrap">
-                                      <div class="hover-wrap-inner">
-                                        <img decoding="async" class="img-with-animation tint-accent skip-lazy" data-delay="0" height="1" width="1" data-animation="none" src="./image/paripesa-affiliates-logo.png" alt="" style="width: 90px">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="nectar-split-heading bold-aspect" data-align="center" data-m-align="inherit" data-text-effect="letter-reveal-top" data-animation-type="line-reveal-by-space" data-animation-delay="0" data-animation-offset="" data-m-rm-animation="" data-stagger="true" data-custom-font-size="false">
-                                  <h4 style="color: #003bce; text-align: center;">Earn a 500% Bonus with Our Affiliate Link on <b>Paripulse! </b></h4>
-                                </div>
-                                <div class="wpb_text_column wpb_content_element vc_custom_1716581239134">
-                                  <div class="wpb_wrapper">
-                                     <p style="text-align: center; color: black;">
-                                      Join our affiliate program for a 500% bonus on every successful referral through your link on Paripulse. Boost your earnings while helping us expand our reach. Start promoting today!
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <br>
-                          <br>
-
-                          <div style="margin-top: 30px" class="vc_col-sm-4 wpb_column column_container vc_column_container col has-animation padding-3-percent top_margin_phone_0px bottom_margin_phone_-30px inherit_tablet padding-3-percent_phone" data-using-bg="true" data-border-radius="20px" data-padding-pos="all" data-has-bg-color="true" data-bg-color="#f1f3fc" data-bg-opacity="1" data-animation="slight-fade-in-from-bottom" data-delay="200">
-                            <div class="vc_column-inner" id="whatsappLinkkk">
-                              <div class="column-bg-overlay-wrap column-bg-layer" data-bg-animation="none">
-                                <div class="column-bg-overlay" style="
-                                    opacity: 1;
-                                    background-color: #f1f3fc;
-                                  "></div>
-                              </div>
-                              <div class="wpb_wrapper">
-                                <div class="img-with-aniamtion-wrap center margin_right_phone_0px margin_left_phone_0px" data-max-width="150%" data-max-width-mobile="default" data-shadow="none" data-animation="none">
-                                  <div class="inner">
-                                    <div class="hover-wrap">
-                                      <div class="hover-wrap-inner">
-                                        <img decoding="async" class="img-with-animation tint-accent skip-lazy" data-delay="0" height="1" width="1" data-animation="none" src="./image/paripesa-affiliates-logo.png" alt="" style="width: 90px">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="nectar-split-heading bold-aspect" data-align="center" data-m-align="inherit" data-text-effect="letter-reveal-top" data-animation-type="line-reveal-by-space" data-animation-delay="0" data-animation-offset="" data-m-rm-animation="" data-stagger="true" data-custom-font-size="false">
-                                  <h4 style="color: #003bce; text-align: center;">Earn a 500% Bonus with Our Affiliate Link on <b>Paripulse! </b></h4>
-                                </div>
-                                <div class="wpb_text_column wpb_content_element vc_custom_1716581239134">
-                                  <div class="wpb_wrapper">
-                                     <p style="text-align: center; color: black;">
-                                      Join our affiliate program for a 500% bonus on every successful referral through your link on Paripulse. Boost your earnings while helping us expand our reach. Start promoting today!
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-                <div style="height: 10vh;"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              
-
-               
                 <style>
                   #ajax-content-wrap .vc_row.top_margin_0px {
                     margin-top: 0px;
@@ -4043,7 +3648,6 @@ margin-top: -45px !important;
                   }
                 </style>
 
-
                 <!-- <footer style="background-color: rgb(255, 255, 255); color: black; padding: 40px 20px; text-align: center; font-family: Arial, sans-serif;">
                  
                   <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 10px; color: #000000;">Be First to Know</h2>
@@ -4068,100 +3672,131 @@ margin-top: -45px !important;
                     <span style="margin-left: 10px; font-size: 14px;">&copy; OneAffiliate 2022</span>
                   </div>
                 </footer> -->
-
-
-               
-              
-              
-              
-
-
-
-
-
-
-
-
-
-
-  
               </div>
             </div>
           </div>
 
-
-
-
-
-
-
-
-
-
-
-
- 
-          <div style="background-color: #121212; color: #fff; text-align: center; padding: 50px 20px;">
-            <h1 style="font-size: 22px !important; margin-bottom: 20px; animation: translateAnimation 4s linear infinite;">
+          <div
+            style="
+              background-color: #121212;
+              color: #fff;
+              text-align: center;
+              padding: 50px 20px;
+            "
+          >
+            <h1
+              style="
+                font-size: 22px !important;
+                margin-bottom: 20px;
+                animation: translateAnimation 4s linear infinite;
+              "
+            >
               Elevate Your Strategy with Access to Exclusive Offers
             </h1>
-            <form action="#" style="display: flex; justify-content: center; width: 100%; max-width: 100%; padding: 0;">
-                <input type="email" placeholder="Your email address" required 
-                       style="padding: 15px; border: none; outline: none; font-size: 16px; color: rgb(144, 210, 254); background-color: #000; flex-grow: 1; max-width: 100%; border: 2px solid rgb(54, 54, 54); border-radius: 50px 0 0 50px;">
-                <button type="submit" 
-                        style="background-color: rgb(144, 210, 254); border: 2px solid rgb(48, 48, 48); color: #000; padding: 15px 20px; font-size: 16px; cursor: pointer; border-radius: 0 50px 50px 0; position: relative;">
-                    <span style="font-weight: bold;">→</span>
-                </button>
+            <form
+              action="#"
+              style="
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                max-width: 100%;
+                padding: 0;
+              "
+            >
+              <input
+                type="email"
+                placeholder="Your email address"
+                required
+                style="
+                  padding: 15px;
+                  border: none;
+                  outline: none;
+                  font-size: 16px;
+                  color: rgb(144, 210, 254);
+                  background-color: #000;
+                  flex-grow: 1;
+                  max-width: 100%;
+                  border: 2px solid rgb(54, 54, 54);
+                  border-radius: 50px 0 0 50px;
+                "
+              />
+              <button
+                type="submit"
+                style="
+                  background-color: rgb(144, 210, 254);
+                  border: 2px solid rgb(48, 48, 48);
+                  color: #000;
+                  padding: 15px 20px;
+                  font-size: 16px;
+                  cursor: pointer;
+                  border-radius: 0 50px 50px 0;
+                  position: relative;
+                "
+              >
+                <span style="font-weight: bold">→</span>
+              </button>
             </form>
-        
+
             <style>
-                @keyframes translateAnimation {
-                    0% {
-                        transform: translateX(0);
-                        color: rgb(255, 255, 255);
-                    }
-                    50% {
-                        transform: translateX(1px);
-                        color: rgb(192, 223, 244);
-                    }
-                    100% {
-                        transform: translateX(0);
-                        color: rgb(255, 255, 255);
-                    }
+              @keyframes translateAnimation {
+                0% {
+                  transform: translateX(0);
+                  color: rgb(255, 255, 255);
                 }
+                50% {
+                  transform: translateX(1px);
+                  color: rgb(192, 223, 244);
+                }
+                100% {
+                  transform: translateX(0);
+                  color: rgb(255, 255, 255);
+                }
+              }
             </style>
-
-        </div>
-
-
-
-        <div style="background-color: #121212; padding: 20px; text-align: center; color: #ffffff;">
-          <div style="margin-bottom: 10px;">
-              <a href="#" style="margin: 0 10px; color: #ffffff;">
-                  <img src="https://cdn.prod.website-files.com/6425f546844727ce5fb9e5ab/665eb95f4ac9cfe02904580f_youtube-svg.svg" alt="Discord" style="width: 30px;">
-              </a>
-              <a href="#" style="margin: 0 10px; color: #ffffff;">
-                  <img src="https://cdn.prod.website-files.com/6425f546844727ce5fb9e5ab/665eb95cbfe9077de6822836_linkedin-svg.svg" alt="X" style="width: 30px;">
-              </a>
-              <a href="#" style="margin: 0 10px; color: #ffffff;">
-                  <img src="https://cdn.prod.website-files.com/6425f546844727ce5fb9e5ab/665eb95cbfe9077de6822836_linkedin-svg.svg" alt="YouTube" style="width: 30px;">
-              </a>
-              <a href="#" style="margin: 0 10px; color: #ffffff;">
-                  <img src="https://cdn.prod.website-files.com/6425f546844727ce5fb9e5ab/665eb95cbfe9077de6822836_linkedin-svg.svg" alt="LinkedIn" style="width: 30px;">
-              </a>
           </div>
-          <p style="font-size: 12px; margin: 0;">&copy; 2024 COPYRIGHT OneAffiliate. ALL RIGHTS RESERVED.</p>
-      </div>
 
-        
-
-        
-
-
-
-
-
-
+          <div
+            style="
+              background-color: #121212;
+              padding: 20px;
+              text-align: center;
+              color: #ffffff;
+            "
+          >
+            <div style="margin-bottom: 10px">
+              <a href="#" style="margin: 0 10px; color: #ffffff">
+                <img
+                  src="https://cdn.prod.website-files.com/6425f546844727ce5fb9e5ab/665eb95f4ac9cfe02904580f_youtube-svg.svg"
+                  alt="Discord"
+                  style="width: 30px"
+                />
+              </a>
+              <a href="#" style="margin: 0 10px; color: #ffffff">
+                <img
+                  src="https://cdn.prod.website-files.com/6425f546844727ce5fb9e5ab/665eb95cbfe9077de6822836_linkedin-svg.svg"
+                  alt="X"
+                  style="width: 30px"
+                />
+              </a>
+              <a href="#" style="margin: 0 10px; color: #ffffff">
+                <img
+                  src="https://cdn.prod.website-files.com/6425f546844727ce5fb9e5ab/665eb95cbfe9077de6822836_linkedin-svg.svg"
+                  alt="YouTube"
+                  style="width: 30px"
+                />
+              </a>
+              <a href="#" style="margin: 0 10px; color: #ffffff">
+                <img
+                  src="https://cdn.prod.website-files.com/6425f546844727ce5fb9e5ab/665eb95cbfe9077de6822836_linkedin-svg.svg"
+                  alt="LinkedIn"
+                  style="width: 30px"
+                />
+              </a>
+            </div>
+            <p style="font-size: 12px; margin: 0">
+              &copy; 2024 COPYRIGHT OneAffiliate. ALL RIGHTS RESERVED.
+            </p>
+          </div>
 
           <div
             id="footer-outer"
@@ -4177,23 +3812,11 @@ margin-top: -45px !important;
             data-using-widget-area="false"
             data-link-hover="default"
           ></div>
-         
 
           <div
             id="slide-out-widget-area-bg"
             class="slide-out-from-right dark"
           ></div>
-
-
-
-
-
-
-
-
-
-
-
 
           <div
             id="slide-out-widget-area"
@@ -4217,116 +3840,101 @@ margin-top: -45px !important;
                 >
                   <ul class="menu">
                     <li
-                        id="menu-item-682"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item nectar-regular-menu-item menu-item-682"
+                      id="menu-item-682"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item nectar-regular-menu-item menu-item-682"
+                    >
+                      <a href="./index.html" aria-current="page"
+                        ><span class="menu-title-text">Home</span></a
                       >
-                        <a href="./index.html" aria-current="page"
-                          ><span class="menu-title-text">Home</span></a
-                        >
-                      </li>
-                     
-                      <li
-                        id="menu-item-531"
-                        class="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-531"
+                    </li>
+
+                    <li
+                      id="menu-item-531"
+                      class="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-531"
+                    >
+                      <a href="./about.html"
+                        ><span class="menu-title-text">About</span></a
                       >
-                        <a href="./about.html"
-                          ><span class="menu-title-text">About</span></a
-                        >
-                      </li>
-                      <li
-                        id="menu-item-9488"
-                        class="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-9488"
+                    </li>
+                    <li
+                      id="menu-item-9488"
+                      class="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-9488"
+                    >
+                      <a href="./blog.html"
+                        ><span class="menu-title-text">Events</span></a
                       >
-                        <a href="./blog.html"
-                          ><span class="menu-title-text">Events</span></a
-                        >
-                      </li>
-                      <li
+                    </li>
+                    <li
                       class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9488"
                     >
                       <a href="./index.html#faqqq">FAQ</a>
                     </li>
 
-                      <li
-                        id="menu-item-9488"
-                        class="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-9488"
+                    <li
+                      id="menu-item-9488"
+                      class="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-9488"
+                    >
+                      <a href="./partners1.html"
+                        ><span class="menu-title-text">partners</span></a
                       >
-                        <a href="./partners1.html"
-                          ><span class="menu-title-text">partners</span></a
-                        >
-                      </li>
+                    </li>
 
-
-                      <li
-                        id="menu-item-9488"
-                        class="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-9488"
+                    <li
+                      id="menu-item-9488"
+                      class="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-9488"
+                    >
+                      <a href="./contact.html"
+                        ><span class="menu-title-text">Contact Us</span></a
                       >
-                        <a href="./contact.html"
-                          ><span class="menu-title-text">Contact Us</span></a
-                        >
-                      </li>
+                    </li>
 
-                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-619">
-						<a
-						  href="./become/affiliate.html"
-						  style="
-							display: inline-block;
-							padding: 8px 13px;
-							background-color: #181818;
-							color: rgb(202, 202, 202);
-							text-decoration: none;
-							border-radius: 15px;
-							font-size: 16px;
-							font-weight: bold;
-							transition: background-color 0.3s ease, box-shadow 0.3s ease;
-							position: relative;
-							overflow: hidden;
-							margin-left: -15px;
-						  "
-						 
-						>
-						  Become An Affiliate
-						  <span style="
-							content: '';
-							position: absolute;
-							bottom: 0;
-							left: 0;
-							width: 0;
-							height: 3px;
-							background-color: white;
-							transition: width 0.3s ease;
-						  "></span>
-						</a>
-					  </li>
-
-
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-619"
+                    >
+                      <a
+                        href="./become/affiliate.html"
+                        style="
+                          display: inline-block;
+                          padding: 8px 13px;
+                          background-color: #181818;
+                          color: rgb(202, 202, 202);
+                          text-decoration: none;
+                          border-radius: 15px;
+                          font-size: 16px;
+                          font-weight: bold;
+                          transition: background-color 0.3s ease,
+                            box-shadow 0.3s ease;
+                          position: relative;
+                          overflow: hidden;
+                          margin-left: -15px;
+                        "
+                      >
+                        Become An Affiliate
+                        <span
+                          style="
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 0;
+                            height: 3px;
+                            background-color: white;
+                            transition: width 0.3s ease;
+                          "
+                        ></span>
+                      </a>
+                    </li>
                   </ul>
 
                   <ul class="menu secondary-header-items"></ul>
                 </div>
               </div>
 
-              <div class="bottom-meta-wrap">
-               </div>
+              <div class="bottom-meta-wrap"></div>
               <!--/bottom-meta-wrap-->
             </div>
             <!--/inner-wrap-->
           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
         </div>
         <!--/ajax-content-wrap-->
       </div>
@@ -4495,7 +4103,7 @@ margin-top: -45px !important;
       // Call the function to convert headings on page load
       convertHeadingsToTitleCase();
     </script>
-     <script src="
+    <script src="
      https://cdn.jsdelivr.net/npm/icomoon-build@0.2.8/lib/icomoon.min.js
      "></script>
     <!-- end Simple Custom CSS and JS -->

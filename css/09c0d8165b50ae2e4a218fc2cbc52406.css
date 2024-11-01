@@ -10821,7 +10821,7 @@ body .vc_text_separator div,
 body.box-rolling,
 body[data-footer-reveal="1"].ascend.box-rolling,
 body[data-footer-reveal="1"].box-rolling {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 #sidebar .widget .nectar_widget[class*="nectar_blog_posts_"] > li .post-date,
 .post-area.standard-minimal .post .more-link span,
