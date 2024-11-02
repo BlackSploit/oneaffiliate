@@ -498,7 +498,7 @@ body {
 }
 .form_wrapper .head_form {
   width: 360px;
-  border-radius: 8px;
+  border-radius: 20px;
   background-color: #232323;
   padding: 32px 45px;
 }
